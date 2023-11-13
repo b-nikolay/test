@@ -56,7 +56,10 @@ body {
 }
 
 .modal-content {
-  margin-top: 100px;
+  position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
@@ -189,8 +192,8 @@ color: #fff;
 }
 .music__title {
 
-margin-top: 200px;
-margin-bottom: 200px;
+margin-top: 100px;
+margin-bottom: 100px;
 
 
 
@@ -265,7 +268,6 @@ color: #A8A8A8;
 
 .events {
   
-  margin-top: 200px;
 }
 .container {
 }
@@ -274,7 +276,7 @@ color: #A8A8A8;
 
 }
 .events__info {
-  margin-top: 150px;
+  margin-top: 80px;
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: #121212;
@@ -348,10 +350,12 @@ padding: 5px 4px;
   position: relative;
   top: -2px;
 }
-
+.tab-active {
+  color: #C41A2B !important;
+} 
 .contact {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 80px;
+  padding-bottom: 100px;
 }
 .container {
 }
@@ -410,6 +414,7 @@ text-align: left;
 .footer {
   background-color: #343434;
   padding-top: 45px;
+  margin-top: 100px;
   padding-bottom: 90px;
 }
 .container {
@@ -635,6 +640,9 @@ text-align: left;
   .input-box input::placeholder, .input-box textarea::placeholder {
     font-size: 15px;
   }
+  .footer__info  {
+    padding: 0 30px;
+  }
   .contact {
     padding-top: 50px;
     padding-bottom: 0px;
@@ -658,6 +666,7 @@ text-align: left;
   }
   .header__item {
     font-size: 20px;
+    background: none !important;
   }
   h1 {
     font-size: 24px;

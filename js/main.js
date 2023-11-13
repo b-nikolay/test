@@ -51,3 +51,49 @@ menuBtn.addEventListener('click', function(){
 	menu.classList.toggle('active');
   body.classList.toggle('active-modal');
 })
+
+// let musicLink = document.querySelector('#music-link')
+// let eventsLink = document.querySelector('#events-link')
+// let contactsLink = document.querySelector('#contacts-link')
+
+// let musicBlock = document.querySelector('.music')
+// let eventsBlock =  document.querySelector('.events')
+// let  contactsBlock = document.querySelector('.contacts')
+
+// musicLink.addEventListener('click', () => {
+//   eventsBlock.style.display = 'block'
+//   musicLink.style.display = 'none'
+//   contactsBlock.style.display = 'none'
+// })
+// eventsLink.addEventListener('click', () => {
+//   eventsBlock.style.display = 'block'
+//   musicLink.style.display = 'none'
+//   contactsBlock.style.display = 'none'
+// })
+// contactsLink.addEventListener('click', () => {
+
+// })
+function openTab(event, name) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("header__item");
+  for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" tab-active", "");
+      menu.classList.remove('active')
+      menuBtn.classList.remove('active')
+      body.classList.remove('active-modal')
+
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(name).style.display = "block";
+  event.currentTarget.className += " tab-active";
+} 
