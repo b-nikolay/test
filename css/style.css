@@ -1,4 +1,4 @@
-/*NORMAL CSS*/
+/*Сброс стилей до нормального состояния*/
 
 *{padding: 0;margin: 0;border: 0;}
 *,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
@@ -42,7 +42,7 @@ body {
   background-color: rgb(0,0,0); box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-
+/* Модалка */
 .modal {
   display: none;
   position: fixed; 
@@ -118,6 +118,8 @@ h1 {
   letter-spacing: 0em;
   text-align: center;
 }
+
+/* Блок шапки */
 
 .header {
   padding-top: 110px;
@@ -232,6 +234,8 @@ color: #fff;
 
 .main {
 }
+
+/* Блок - Music */
 .music {
 }
 .container {
@@ -312,6 +316,7 @@ text-align: left;
 color: #A8A8A8;
 }
 
+/* Блок - Events */
 .events {
   
 }
@@ -411,6 +416,9 @@ padding: 5px 4px;
   
   visibility:visible;
 }
+
+
+/* Дополнения */
 .red {
   background-color: #C41A2B;
   border: 1px solid #C41A2B !important;
@@ -488,6 +496,8 @@ text-align: left;
   background-color: #C41A2B;
 }
 
+
+/* Подвал */
 .footer {
   background-color: #343434;
   padding-top: 45px;
@@ -514,6 +524,9 @@ text-align: left;
 .footer__link {
   margin-left: 15px;
 }
+
+
+/* Слайдер */
 .swiper-button-next {
   width: 60px;
   height: 60px;
@@ -575,7 +588,7 @@ text-align: left;
 
 
 
-
+/* Блок -  Админка */
 .admin {
 }
 .container {
@@ -706,6 +719,15 @@ display: block;
   background-image: url('../img/svg/upload.svg');
 }
 
+
+
+
+
+
+
+
+
+/* Блок - Личный кабинет */
 .lk {
 }
 .tabcontent {
@@ -884,7 +906,7 @@ text-align: left;
 
 
 
-/* HEADER MENU */
+/* Бургер меню */
 
 .header__menu.active span:nth-of-type(1) {
   display: none;
@@ -946,6 +968,11 @@ text-align: left;
 .header__menu span:nth-of-type(3) {
 	top: calc(50% + 5px);
 }
+
+
+
+
+/* АДАПТИВ ПЛАНШЕТЫ */
 @media (max-width:880px) {
   .lk__item-input-select input {
     width: 100%;
@@ -1226,6 +1253,9 @@ text-align: left;
   height: auto;
 }
 }
+
+
+/* АДАПТИВ ТЕЛЕФОНЫ */
 @media (max-width:550px) {
   .music__title {
     margin-top: 50px;

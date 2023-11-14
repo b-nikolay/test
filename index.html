@@ -1,85 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NeuroPunk</title>
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="css/swiper.css" />
+  <script src="js/swiper.js"></script>
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/anim.css">
 </head>
+
 <body>
 
   <div class="main">
-  <header class="header">
-    <div class="container">
-      <div class="header__row">
-        <div class="header__items">
-          <div class="header__item-logo">
+    <!-- Шапка -->
+    <header class="header">
+      <div class="container">
+        <div class="header__row">
+          <div class="header__items">
+            <div class="header__item-logo">
 
-            <img src="img/svg/logo.svg" alt="" class="">
-          </div>
-
-          <div class="header__item-log">
-            <button id="signup" class="signup">SIGN UP</button>
-            <button id="login" class="login">LOG IN</button>
-          </div>
-          <div class="header__menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-        <div class="header__items menu">
-          <a href="javascript:void(0)" onclick="openTab(event, 'music')"  class="header__item" id="defaultOpen">Music</a>
-          <a href="javascript:void(0)" onclick="openTab(event, 'events')" class="header__item">Events</a>
-          <a href="javascript:void(0)" onclick="openTab(event, 'contact')" class="header__item">Contact</a>
-          <a href="javascript:void(0)" onclick="openTab(event, 'admin')" class="header__item">Admin Panel</a>
-          <a href="javascript:void(0)" onclick="openTab(event, 'personal')" class="header__item">LK</a>
-          <a href="javascript:void(0)" onclick="openTab(event, 'tracklist')" class="header__item">Your Tracklist</a>
-        </div>
-        <div class="header__items menu-mobile">
-          <ul class="menu__list">
-            <li class="menu__item">
-
-              <a href="javascript:void(0)" onclick="openTab(event, 'music')"  class="header__item music-icon" id="defaultOpen">Music</a>
-            </li>
-            <li class="menu__item">
-
-              <a href="javascript:void(0)" onclick="openTab(event, 'tracklist')"  class="header__item music-icon" id="defaultOpen">Your Tracklist</a>
-            </li>
-            <li class="menu__item">
-
-              <a href="javascript:void(0)" onclick="openTab(event, 'events')" class="header__item events-icon">Events</a>
-            </li>
-            <li class="menu__item">
-
-              <a href="javascript:void(0)" onclick="openTab(event, 'contact')" class="header__item contact-icon">Contact</a>
-            </li>
-            <li class="menu__item">
-
-              <a href="javascript:void(0)" onclick="openTab(event, 'admin')" class="header__item admin-icon">Admin panel(only admins)</a>
-            </li>
-        
-
-
-            <div class="header__item-log header__item-log-mobile">
-              <button id="signup-m" class="red">SIGN UP</button>
-              <button href="javascript:void(0)" onclick="openTab(event, 'personal')" id="lk" class=" transparent">LK</button>
-              <button id="login-m" class="login red">LOG IN</button>
+              <img src="img/svg/logo.svg" alt="" class="">
             </div>
-          </ul>
-    
+
+            <div class="header__item-log">
+              <button id="signup" class="signup">SIGN UP</button>
+              <button id="login" class="login">LOG IN</button>
+            </div>
+            <div class="header__menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="header__items menu">
+            <a href="javascript:void(0)" onclick="openTab(event, 'music')" class="header__item"
+              id="defaultOpen">Music</a>
+            <a href="javascript:void(0)" onclick="openTab(event, 'events')" class="header__item">Events</a>
+            <a href="javascript:void(0)" onclick="openTab(event, 'contact')" class="header__item">Contact</a>
+            <a href="javascript:void(0)" onclick="openTab(event, 'admin')" class="header__item">Admin Panel</a>
+            <a href="javascript:void(0)" onclick="openTab(event, 'personal')" class="header__item">LK</a>
+            <a href="javascript:void(0)" onclick="openTab(event, 'tracklist')" class="header__item">Your Tracklist</a>
+          </div>
+          <div class="header__items menu-mobile">
+            <ul class="menu__list">
+              <li class="menu__item">
+
+                <a href="javascript:void(0)" onclick="openTab(event, 'music')" class="header__item music-icon"
+                  id="defaultOpen">Music</a>
+              </li>
+              <li class="menu__item">
+
+                <a href="javascript:void(0)" onclick="openTab(event, 'tracklist')" class="header__item music-icon"
+                  id="defaultOpen">Your Tracklist</a>
+              </li>
+              <li class="menu__item">
+
+                <a href="javascript:void(0)" onclick="openTab(event, 'events')"
+                  class="header__item events-icon">Events</a>
+              </li>
+              <li class="menu__item">
+
+                <a href="javascript:void(0)" onclick="openTab(event, 'contact')"
+                  class="header__item contact-icon">Contact</a>
+              </li>
+              <li class="menu__item">
+
+                <a href="javascript:void(0)" onclick="openTab(event, 'admin')" class="header__item admin-icon">Admin
+                  panel(only admins)</a>
+              </li>
+
+
+
+              <div class="header__item-log header__item-log-mobile">
+                <button id="signup-m" class="red">SIGN UP</button>
+                <button href="javascript:void(0)" onclick="openTab(event, 'personal')" id="lk"
+                  class=" transparent">LK</button>
+                <button id="login-m" class="login red">LOG IN</button>
+              </div>
+            </ul>
+
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
+
+
+    <!-- Блок Music -->
     <section id="music" class="music tabcontent animate__animated animate__bounceInLeft">
       <div class="container">
         <h1 class="music__title">
@@ -87,136 +96,136 @@
         </h1>
         <div class="music__cards">
 
-          
-<!-- Slider main container -->
-<div class="swiper swiper-music">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide">
-      <div class="music__card">
-        <div class="music__card-image">
-          <img src="img/music-logo/01.png" alt="">
-        </div>
-        <div class="music__card-info">
-          <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
-          <h3 class="music__card-subtitle">GYDRA</h3>
-          <div class="music__card-musics">
-            <div class="music__card-music">
-              <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
-              <div class="music__card-music-info">
 
-                <h4 class="music__card-music-title">Frostbolt (Irontype Remix)</h4>
-                <h5 class="music__card-music-subtitle">GYDRA</h5>
-              </div>
-          
-            </div>
-            <div class="music__card-music">
-              <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
-              <div class="music__card-music-info">
+          <!-- Slider main container -->
+          <div class="swiper swiper-music">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="music__card">
+                  <div class="music__card-image">
+                    <img src="img/music-logo/01.png" alt="">
+                  </div>
+                  <div class="music__card-info">
+                    <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
+                    <h3 class="music__card-subtitle">GYDRA</h3>
+                    <div class="music__card-musics">
+                      <div class="music__card-music">
+                        <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
+                        <div class="music__card-music-info">
 
-                <h4 class="music__card-music-title">Alpha (Grinder Remix)</h4>
-                <h5 class="music__card-music-subtitle">GYDRA</h5>
+                          <h4 class="music__card-music-title">Frostbolt (Irontype Remix)</h4>
+                          <h5 class="music__card-music-subtitle">GYDRA</h5>
+                        </div>
+
+                      </div>
+                      <div class="music__card-music">
+                        <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
+                        <div class="music__card-music-info">
+
+                          <h4 class="music__card-music-title">Alpha (Grinder Remix)</h4>
+                          <h5 class="music__card-music-subtitle">GYDRA</h5>
+                        </div>
+                      </div>
+                      <div class="form-send btn">
+                        <input type="button" value="ADD"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="music__card-info-mb">
+                    <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
+                    <h3 class="music__card-subtitle">GYDRA</h3>
+                    <a href="" class="btn red">More info</a>
+                  </div>
+                </div>
               </div>
+              <div class="swiper-slide">
+                <div class="music__card">
+                  <div class="music__card-image">
+                    <img src="img/music-logo/01.png" alt="">
+                  </div>
+                  <div class="music__card-info">
+                    <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
+                    <h3 class="music__card-subtitle">GYDRA</h3>
+                    <div class="music__card-musics">
+                      <div class="music__card-music">
+                        <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
+                        <div class="music__card-music-info">
+
+                          <h4 class="music__card-music-title">Frostbolt (Irontype Remix)</h4>
+                          <h5 class="music__card-music-subtitle">GYDRA</h5>
+                        </div>
+
+                      </div>
+                      <div class="music__card-music">
+                        <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
+                        <div class="music__card-music-info">
+
+                          <h4 class="music__card-music-title">Alpha (Grinder Remix)</h4>
+                          <h5 class="music__card-music-subtitle">GYDRA</h5>
+                        </div>
+                      </div>
+                      <div class="form-send btn">
+                        <input type="button" value="ADD"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="music__card-info-mb">
+                    <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
+                    <h3 class="music__card-subtitle">GYDRA</h3>
+                    <a href="" class="btn red">More info</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="music__card">
+                  <div class="music__card-image">
+                    <img src="img/music-logo/01.png" alt="">
+                  </div>
+                  <div class="music__card-info">
+                    <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
+                    <h3 class="music__card-subtitle">GYDRA</h3>
+                    <div class="music__card-musics">
+                      <div class="music__card-music">
+                        <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
+                        <div class="music__card-music-info">
+
+                          <h4 class="music__card-music-title">Frostbolt (Irontype Remix)</h4>
+                          <h5 class="music__card-music-subtitle">GYDRA</h5>
+                        </div>
+
+                      </div>
+                      <div class="music__card-music">
+                        <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
+                        <div class="music__card-music-info">
+
+                          <h4 class="music__card-music-title">Alpha (Grinder Remix)</h4>
+                          <h5 class="music__card-music-subtitle">GYDRA</h5>
+                        </div>
+                      </div>
+                      <div class="form-send btn">
+                        <input type="button" value="ADD" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="music__card-info-mb">
+                    <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
+                    <h3 class="music__card-subtitle">GYDRA</h3>
+                    <a href="" class="btn red">More info</a>
+                  </div>
+                </div>
+              </div>
+
             </div>
-            <div class="form-send btn">
-              <input type="button" value="ADD">
-            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
           </div>
-        </div>
-        <div class="music__card-info-mb">
-          <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
-          <h3 class="music__card-subtitle">GYDRA</h3>
-          <a href="" class="btn red">More info</a>
-        </div>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <div class="music__card">
-        <div class="music__card-image">
-          <img src="img/music-logo/01.png" alt="">
-        </div>
-        <div class="music__card-info">
-          <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
-          <h3 class="music__card-subtitle">GYDRA</h3>
-          <div class="music__card-musics">
-            <div class="music__card-music">
-              <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
-              <div class="music__card-music-info">
-
-                <h4 class="music__card-music-title">Frostbolt (Irontype Remix)</h4>
-                <h5 class="music__card-music-subtitle">GYDRA</h5>
-              </div>
-          
-            </div>
-            <div class="music__card-music">
-              <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
-              <div class="music__card-music-info">
-
-                <h4 class="music__card-music-title">Alpha (Grinder Remix)</h4>
-                <h5 class="music__card-music-subtitle">GYDRA</h5>
-              </div>
-            </div>
-            <div class="form-send btn">
-              <input type="button" value="ADD">
-            </div>
-          </div>
-        </div>
-        <div class="music__card-info-mb">
-          <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
-          <h3 class="music__card-subtitle">GYDRA</h3>
-          <a href="" class="btn red">More info</a>
-        </div>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <div class="music__card">
-        <div class="music__card-image">
-          <img src="img/music-logo/01.png" alt="">
-        </div>
-        <div class="music__card-info">
-          <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
-          <h3 class="music__card-subtitle">GYDRA</h3>
-          <div class="music__card-musics">
-            <div class="music__card-music">
-              <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
-              <div class="music__card-music-info">
-
-                <h4 class="music__card-music-title">Frostbolt (Irontype Remix)</h4>
-                <h5 class="music__card-music-subtitle">GYDRA</h5>
-              </div>
-          
-            </div>
-            <div class="music__card-music">
-              <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
-              <div class="music__card-music-info">
-
-                <h4 class="music__card-music-title">Alpha (Grinder Remix)</h4>
-                <h5 class="music__card-music-subtitle">GYDRA</h5>
-              </div>
-            </div>
-            <div class="form-send btn">
-              <input type="button" value="ADD">
-            </div>
-          </div>
-        </div>
-        <div class="music__card-info-mb">
-          <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
-          <h3 class="music__card-subtitle">GYDRA</h3>
-          <a href="" class="btn red">More info</a>
-        </div>
-      </div>
-    </div>
- 
-  </div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-</div>
 
 
 
-          
+
           <!-- <div class="music__card">
             <div class="music__card-image">
               <img src="img/music-logo/01.png" alt="">
@@ -281,11 +290,14 @@
               <a href="" class="btn">More info</a>
             </div>
           </div> -->
- 
+
         </div>
       </div>
     </section>
-    <section id="events" class="events tabcontent animate__animated animate__bounceInLeft" >
+
+
+    <!-- Блок Events -->
+    <section id="events" class="events tabcontent animate__animated animate__bounceInLeft">
       <div class="container">
         <h1 class="events__title">Events</h1>
         <div class="events__info">
@@ -300,12 +312,15 @@
               BUY TICKETS
             </a>
           </div>
-     
+
 
         </div>
       </div>
     </section>
-    <section id="contact" class="contact tabcontent animate__animated animate__bounceInLeft" >
+
+
+    <!-- Блок Contact -->
+    <section id="contact" class="contact tabcontent animate__animated animate__bounceInLeft">
       <div class="container">
         <h1 class="contact__title">Contact</h1>
         <div class="contact__form">
@@ -330,6 +345,8 @@
       </div>
     </section>
 
+
+    <!-- Блок Admin panel -->
     <section id="admin" class="admin tabcontent animate__animated animate__bounceInLeft">
       <div class="container">
         <h1 class="admin__title">
@@ -347,10 +364,10 @@
                   <div class="admin__panel-column">
 
                     <div class="admin__panel-item">
-      
+
                       <h3 class="admin__panel-item-title">Select category...</h3>
                       <form class="admin__panel-form" action="#">
-      
+
                         <div class="admin__panel-input">
                           <select name="event" id="">
                             <option value="Tracks" selected>Tracks</option>
@@ -359,117 +376,117 @@
                             <option value="New category">New category</option>
                           </select>
                         </div>
-      
+
                         <div class="admin__panel-btn">
                           <input type="button" value="Upload" />
                         </div>
                       </form>
-      
+
                     </div>
-      
+
                   </div>
-      
+
 
                 </div>
                 <div class="swiper-slide swiper-slide-admin">
-               
-            <div class="admin__panel-column admin__panel-column-artist">
-              <div class="admin__panel-item">
 
-                <h3 class="admin__panel-item-title">New Artist</h3>
-                <form class="admin__panel-form" action="#">
-
-                  <div class="admin__panel-input">
-
-                    <input type="text" placeholder="Soundcloud ID" />
-                  </div>
-
-                  <div class="admin__panel-btn">
-                    <input type="button" value="Add" />
-                  </div>
-                </form>
-
-              </div>
-              <div class="admin__panel-item">
-
-                <h3 class="admin__panel-item-title">Delete Artist</h3>
-                <form class="admin__panel-form" action="#">
-
-                  <div class="admin__panel-input">
-
-                    <input type="text" placeholder="Soundcloud ID" />
-                  </div>
-
-                  <div class="admin__panel-btn">
-                    <input type="button" value="Delete" />
-                  </div>
-                </form>
-
-              </div>
-            </div>
-
-                </div>
-                <div class="swiper-slide swiper-slide-admin">
-              
-
-            <div class="admin__panel-column">
-
-
-
-              <div class="admin__panel-item">
-
-                <h3 class="admin__panel-item-title">New Event</h3>
-                <form class="admin__panel-form" action="#">
-
-                  <div class="admin__panel-input">
-
-                    <input type="text" name="place-name" placeholder="Place name" />
-                  </div>
-
-                  <div class="admin__panel-input">
-
-                    <input type="text" placeholder="Date" onfocus="(this.type='date')" onblur="(this.type='text')"
-                      name="date" placeholder="Date" />
-                  </div>
-
-                  <div class="admin__panel-input">
-
-                    <input type="text" name="artist-id" placeholder="Artist Soundcloud ID" />
-                  </div>
-
-                  <div class="admin__panel-btn">
-                    <input type="button" value="Upload" />
-                  </div>
-                </form>
-
-              </div>
-            </div>
-                </div>
-                <div class="swiper-slide swiper-slide-admin">
-
-         
-            
-                  <div class="admin__panel-column  admin__panel-column-artist">
+                  <div class="admin__panel-column admin__panel-column-artist">
                     <div class="admin__panel-item">
-      
-                      <h3 class="admin__panel-item-title">New Release</h3>
+
+                      <h3 class="admin__panel-item-title">New Artist</h3>
                       <form class="admin__panel-form" action="#">
-      
+
                         <div class="admin__panel-input">
-      
+
+                          <input type="text" placeholder="Soundcloud ID" />
+                        </div>
+
+                        <div class="admin__panel-btn">
+                          <input type="button" value="Add" />
+                        </div>
+                      </form>
+
+                    </div>
+                    <div class="admin__panel-item">
+
+                      <h3 class="admin__panel-item-title">Delete Artist</h3>
+                      <form class="admin__panel-form" action="#">
+
+                        <div class="admin__panel-input">
+
+                          <input type="text" placeholder="Soundcloud ID" />
+                        </div>
+
+                        <div class="admin__panel-btn">
+                          <input type="button" value="Delete" />
+                        </div>
+                      </form>
+
+                    </div>
+                  </div>
+
+                </div>
+                <div class="swiper-slide swiper-slide-admin">
+
+
+                  <div class="admin__panel-column">
+
+
+
+                    <div class="admin__panel-item">
+
+                      <h3 class="admin__panel-item-title">New Event</h3>
+                      <form class="admin__panel-form" action="#">
+
+                        <div class="admin__panel-input">
+
+                          <input type="text" name="place-name" placeholder="Place name" />
+                        </div>
+
+                        <div class="admin__panel-input">
+
+                          <input type="text" placeholder="Date" onfocus="(this.type='date')" onblur="(this.type='text')"
+                            name="date" placeholder="Date" />
+                        </div>
+
+                        <div class="admin__panel-input">
+
                           <input type="text" name="artist-id" placeholder="Artist Soundcloud ID" />
                         </div>
-      
+
+                        <div class="admin__panel-btn">
+                          <input type="button" value="Upload" />
+                        </div>
+                      </form>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-admin">
+
+
+
+                  <div class="admin__panel-column  admin__panel-column-artist">
+                    <div class="admin__panel-item">
+
+                      <h3 class="admin__panel-item-title">New Release</h3>
+                      <form class="admin__panel-form" action="#">
+
                         <div class="admin__panel-input">
-      
+
+                          <input type="text" name="artist-id" placeholder="Artist Soundcloud ID" />
+                        </div>
+
+                        <div class="admin__panel-input">
+
                           <input type="text" name="tracks-name" placeholder="Tracks Name" />
                         </div>
-      
+
                         <div class="admin__panel-input">
-      
+
                           <input type="text" name="album-name" placeholder="Album/EP Name" />
                         </div>
-      
+
                         <div class="admin__panel-input">
                           <span class="input-upload">Upload poster</span>
                           <input style="opacity: 0;
@@ -477,14 +494,14 @@
                           top: 0;
                           height: 100%;" type="file" name="upload-name" placeholder="Upload Poster" />
                         </div>
-      
+
                         <div class="admin__panel-btn">
                           <input type="button" value="Upload" />
                         </div>
                       </form>
-      
+
                     </div>
-      
+
                   </div>
                 </div>
               </div>
@@ -500,6 +517,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Блок личного кабинета -->
     <section id="personal" class="lk tabcontent animate__animated animate__bounceInLeft">
       <div class="container">
         <h1 class="lk__title">
@@ -507,79 +526,79 @@
         </h1>
         <div class="lk__items">
           <div class="lk__item lk__item-left">
-            <a href="javascript:void(0)" onclick="openTabPersonal(event, 'privacy')"  class="lk__item-link">
+            <a href="javascript:void(0)" onclick="openTabPersonal(event, 'privacy')" class="lk__item-link">
               <img src="img/svg/lock.svg" alt="">
               Privacy
             </a>
-            <a href="javascript:void(0)" onclick="openTabPersonal(event, 'personal-k')"  class="lk__item-link">
+            <a href="javascript:void(0)" onclick="openTabPersonal(event, 'personal-k')" class="lk__item-link">
               <img src="img/svg/person.svg" alt="">
               Personal info
             </a>
-            <a href="javascript:void(0)" onclick="openTabPersonal(event, 'connections')"  class="lk__item-link">
+            <a href="javascript:void(0)" onclick="openTabPersonal(event, 'connections')" class="lk__item-link">
               <img src="img/svg/contact.svg" alt="">
               Connections
             </a>
-            <a href="javascript:void(0)" onclick="openTabPersonal(event, 'auth')"  class="lk__item-link">
+            <a href="javascript:void(0)" onclick="openTabPersonal(event, 'auth')" class="lk__item-link">
               <img src="img/svg/admin.svg" alt="">
               2FA Authentification
             </a>
-            <a href="javascript:void(0)" onclick="openTabPersonal(event, 'dev')"  class="lk__item-link">
+            <a href="javascript:void(0)" onclick="openTabPersonal(event, 'dev')" class="lk__item-link">
               <img src="img/svg/admin.svg" alt="">
               In developing
             </a>
           </div>
           <div class="lk__item lk__item-right">
-            <div class="lk__tab-privacy tabcontent-personal " id="privacy" >
-     
-                <div class="lk__tab-privacy-item">
-                  <h3 class="lk__item-title">Change password:</h3>
-                  <form class="lk__item-form" action="#">
-    
-                    <div class="lk__item-input input-box">
-    
-                      <input type="password" placeholder="Your password" />
-                    </div>
-                    <div class="lk__item-input input-box">
-    
-                      <input type="password" placeholder="Your new password" />
-                    </div>
-    
-                    <div class="lk__item-btn admin__panel-btn">
-                      <input type="button" value="Apply*" />
-                    </div>
-                  </form>
-                </div>
-                <div class="lk__tab-privacy-item">
-                  <h3 class="lk__item-title">Change email:</h3>
-                  <form class="lk__item-form" action="#">
-    
-                    <div class="lk__item-input input-box">
-    
-                      <input type="email" placeholder="Your email" />
-                    </div>
-                    <div class="lk__item-input input-box">
-    
-                      <input type="email" placeholder="Your new email" />
-                    </div>
-    
-                    <div class="lk__item-btn admin__panel-btn">
-                      <input type="button" value="Apply*" />
-                    </div>
-                  </form>
-                </div>
-        
-       
-            </div>
-            <div class="lk__tab-personal tabcontent-personal" id="personal-k" >
-         
+            <div class="lk__tab-privacy tabcontent-personal " id="privacy">
+
               <div class="lk__tab-privacy-item">
                 <h3 class="lk__item-title">Change password:</h3>
                 <form class="lk__item-form" action="#">
-  
+
+                  <div class="lk__item-input input-box">
+
+                    <input type="password" placeholder="Your password" />
+                  </div>
+                  <div class="lk__item-input input-box">
+
+                    <input type="password" placeholder="Your new password" />
+                  </div>
+
+                  <div class="lk__item-btn admin__panel-btn">
+                    <input type="button" value="Apply*" />
+                  </div>
+                </form>
+              </div>
+              <div class="lk__tab-privacy-item">
+                <h3 class="lk__item-title">Change email:</h3>
+                <form class="lk__item-form" action="#">
+
+                  <div class="lk__item-input input-box">
+
+                    <input type="email" placeholder="Your email" />
+                  </div>
+                  <div class="lk__item-input input-box">
+
+                    <input type="email" placeholder="Your new email" />
+                  </div>
+
+                  <div class="lk__item-btn admin__panel-btn">
+                    <input type="button" value="Apply*" />
+                  </div>
+                </form>
+              </div>
+
+
+            </div>
+            <div class="lk__tab-personal tabcontent-personal" id="personal-k">
+
+              <div class="lk__tab-privacy-item">
+                <h3 class="lk__item-title">Change password:</h3>
+                <form class="lk__item-form" action="#">
+
                   <div class="lk__item-input lk__item-input-select">
                     <input type="text" placeholder="Select" name="date">
                   </div>
-  
+
                   <div class="lk__item-btn admin__panel-btn">
                     <input type="button" value="Apply*" />
                   </div>
@@ -588,25 +607,25 @@
               <div class="lk__tab-privacy-item">
                 <h3 class="lk__item-title">Change full name:</h3>
                 <form class="lk__item-form" action="#">
-  
+
                   <div class="lk__item-input input-box">
-  
+
                     <input type="text" placeholder="Your first name" />
                   </div>
                   <div class="lk__item-input input-box">
-  
+
                     <input type="password" placeholder="Your second name" />
                   </div>
-  
+
                   <div class="lk__item-btn admin__panel-btn">
                     <input type="button" value="Apply*" />
                   </div>
                 </form>
               </div>
-            
+
             </div>
-            <div class="lk__tab-connections tabcontent-personal" id="connections" >
-  
+            <div class="lk__tab-connections tabcontent-personal" id="connections">
+
               <div class="lk__tab-conntections-item">
                 <span>Twitch</span>
                 <div class="lk__item-btn admin__panel-btn">
@@ -632,29 +651,29 @@
                 </div>
               </div>
             </div>
-            <div class="lk__tab-auth tabcontent-personal" id="auth" >
-        
-            
+            <div class="lk__tab-auth tabcontent-personal" id="auth">
+
+
               <div class="lk__tab-auth-item">
                 <h3 class="lk__item-title">Change password:</h3>
                 <form class="lk__item-form" action="#">
-  
+
                   <div class="lk__item-input input-box">
-  
+
                     <input type="text" placeholder="Google 2FA Code" />
                   </div>
                   <div class="lk__item-input input-box">
-  
+
                     <input type="email" placeholder="Your email again" />
                   </div>
-  
+
                   <div class="lk__item-btn admin__panel-btn">
                     <input type="button" value="Apply*" />
                   </div>
                 </form>
               </div>
             </div>
-            <div class="lk__tab-auth tabcontent-personal" id="dev" >NULL</div>
+            <div class="lk__tab-auth tabcontent-personal" id="dev">NULL</div>
             <div class="lk__tab-info">
               When you click the Send button, a letter is sent to your email*
             </div>
@@ -662,6 +681,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Блок плейлиста -->
     <div id="tracklist" class="tracklist tabcontent animate__animated animate__bounceInLeft">
       <div class="container">
         <h1 class="tracklist__title">My Tracklist</h1>
@@ -683,7 +704,7 @@
                     <div class="music__card-music">
                       <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
                       <div class="music__card-music-info">
-        
+
                         <h4 class="music__card-music-title">Frostbolt (Irontype Remix)</h4>
                         <h5 class="music__card-music-subtitle">GYDRA</h5>
                       </div>
@@ -691,7 +712,7 @@
                     <div class="music__card-music">
                       <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
                       <div class="music__card-music-info">
-        
+
                         <h4 class="music__card-music-title">Alpha (Grinder Remix)</h4>
                         <h5 class="music__card-music-subtitle">GYDRA</h5>
                       </div>
@@ -717,7 +738,7 @@
                     <div class="music__card-music">
                       <img src="img/music-logo/02.png" alt="" class="music__card-music-cover">
                       <div class="music__card-music-info">
-        
+
                         <h4 class="music__card-music-title">Frostbolt (Irontype Remix)</h4>
                         <h5 class="music__card-music-subtitle">GYDRA</h5>
                       </div>
@@ -725,7 +746,7 @@
                     <div class="music__card-music">
                       <img src="img/music-logo/02.png" alt="" class="music__card-music-cover">
                       <div class="music__card-music-info">
-        
+
                         <h4 class="music__card-music-title">Alpha (Grinder Remix)</h4>
                         <h5 class="music__card-music-subtitle">GYDRA</h5>
                       </div>
@@ -751,7 +772,7 @@
                     <div class="music__card-music">
                       <img src="img/music-logo/03.png" alt="" class="music__card-music-cover">
                       <div class="music__card-music-info">
-        
+
                         <h4 class="music__card-music-title">Frostbolt (Irontype Remix)</h4>
                         <h5 class="music__card-music-subtitle">GYDRA</h5>
                       </div>
@@ -759,7 +780,7 @@
                     <div class="music__card-music">
                       <img src="img/music-logo/03.png" alt="" class="music__card-music-cover">
                       <div class="music__card-music-info">
-        
+
                         <h4 class="music__card-music-title">Alpha (Grinder Remix)</h4>
                         <h5 class="music__card-music-subtitle">GYDRA</h5>
                       </div>
@@ -776,48 +797,51 @@
           </div>
           <div class="swiper-button-prev swiper-track-button-prev"></div>
           <div class="swiper-button-next swiper-track-button-next"></div>
-        
+
         </div>
 
       </div>
     </div>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__info">
-        <div class="footer__text">
-        <p>
-          © Ⓟ 2023 NEUROPUNK RECORDS</p>
-        <p>
-          (ИП БЕСМАН Е.А.)
-        </p>
-        </div>
-        <div class="footer__links">
-          <a href="" class="footer__link">
-            <img src="img/svg/soundcloud.svg" alt="">
-          </a>
-          <a href="" class="footer__link">
-            <img src="img/svg/facebook.svg" alt="">
-          </a>
-          <a href="" class="footer__link">
-            <img src="img/svg/youtube.svg" alt="">
-          </a>
-          <a href="" class="footer__link">
-            <img src="img/svg/vk.svg" alt="">
-          </a>
+
+    <!-- Подвал -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__info">
+          <div class="footer__text">
+            <p>
+              © Ⓟ 2023 NEUROPUNK RECORDS</p>
+            <p>
+              (ИП БЕСМАН Е.А.)
+            </p>
+          </div>
+          <div class="footer__links">
+            <a href="" class="footer__link">
+              <img src="img/svg/soundcloud.svg" alt="">
+            </a>
+            <a href="" class="footer__link">
+              <img src="img/svg/facebook.svg" alt="">
+            </a>
+            <a href="" class="footer__link">
+              <img src="img/svg/youtube.svg" alt="">
+            </a>
+            <a href="" class="footer__link">
+              <img src="img/svg/vk.svg" alt="">
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-</div>  
+    </footer>
+  </div>
 
+  <!-- Модальные окна входа и регистрации -->
   <div id="signUp" class="modal modal-signup animate__animated  animate__fadeInDownBig">
 
     <!-- Модальное содержание -->
     <div class="modal-content">
-      
-    <p>Sign Up</p> <span class="close"></span>
+
+      <p>Sign Up</p> <span class="close"></span>
       <form class="contact-form" action="#">
-    
+
         <div class="input-box">
           <input type="email" placeholder="Email" />
         </div>
@@ -832,15 +856,15 @@
         </div>
       </form>
     </div>
-  
+
 
   </div>
   <div id="logIn" class="modal modal-login animate__animated  animate__fadeInDownBig">
 
     <!-- Модальное содержание -->
     <div class="modal-content">
-      
-    <p>Log in</p> <span class="close"></span>
+
+      <p>Log in</p> <span class="close"></span>
       <form class="login-form" action="#">
         <div class="input-box">
           <input type="email" placeholder="Email" />
@@ -848,21 +872,22 @@
         <div class="input-box">
           <input type="password" placeholder="Password" />
         </div>
-    
+
         <div class="form-send btn">
           <input type="button" value="Log in" />
         </div>
       </form>
     </div>
-  
+
   </div>
 
   <script src="js/main.js"></script>
-  
-<script>
-  // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
-  document.getElementById("privacy").click();
+
+  <script>
+    // Скрипты для показа со старта
+    document.getElementById("defaultOpen").click();
+    document.getElementById("privacy").click();
   </script>
 </body>
+
 </html>
