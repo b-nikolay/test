@@ -3,6 +3,8 @@ var modalLogin = document.getElementById("logIn");
 let body = document.querySelector('body')
 let mainBlur = document.querySelector('.main')
 
+var btnSignM = document.getElementById("signup-m");
+var btnLoginM = document.getElementById("login-m");
 var btnSign = document.getElementById("signup");
 var btnLogin = document.getElementById("login");
 
@@ -10,14 +12,25 @@ var span = document.getElementsByClassName("close")[0];
 
 btnSign.onclick = function() {
   modalSign.style.display = "block";
-  body.classList.add('active-modal');
-  mainBlur.classList.add('blur')
+  body.classList.toggle('active-modal');
+  mainBlur.classList.toggle('blur')
 }
 btnLogin.onclick = function() {
   modalLogin.style.display = "block";
-  body.classList.add('active-modal');
+  body.classList.toggle('active-modal');
   
-  mainBlur.classList.add('blur')
+  mainBlur.classList.toggle('blur')
+}
+btnSignM.onclick = function() {
+  modalSign.style.display = "block";
+  body.classList.toggle('active-modal');
+  mainBlur.classList.toggle('blur')
+}
+btnLoginM.onclick = function() {
+  modalLogin.style.display = "block";
+  body.classList.toggle('active-modal');
+  
+  mainBlur.classList.toggle('blur')
 }
 
 span.onclick = function() {
@@ -29,7 +42,7 @@ window.onclick = function(event) {
     modalSign.style.display = "none";
     modalLogin.style.display = "none";
     mainBlur.classList.remove('blur')
-  body.classList.remove('active-modal')
+  body.classList.toggle('active-modal')
   }
 } 
 
@@ -44,12 +57,16 @@ const swiperMusic = new Swiper('.swiper-music', {
 });
 
 
+
+
+
 let menuBtn = document.querySelector('.header__menu');
 let menu = document.querySelector('.menu-mobile');
 menuBtn.addEventListener('click', function(){
 	menuBtn.classList.toggle('active');
 	menu.classList.toggle('active');
-  body.classList.toggle('active-modal');
+
+    body.classList.toggle('active-modal');
 })
 
 // let musicLink = document.querySelector('#music-link')
@@ -94,6 +111,82 @@ function openTab(event, name) {
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(name).classList.add('tabcontent-vis');
   document.getElementById(name).style.display = "block";
   event.currentTarget.className += " tab-active";
 } 
+function openTabPersonal(event, name) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent-personal");
+  modal = document.getElementsByClassName("tabcontent-personal");
+  for (i = 0; i < tabcontent.length; i++) {
+      // tabcontent[i].style.opacity = "0";
+      tabcontent[i].classList.add('personal-hidden')
+      tabcontent[i].classList.remove('personal-active')
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("lk__item-link");
+  for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" tab-personal-active", "");
+      menu.classList.remove('active')
+      menuBtn.classList.remove('active')
+      body.classList.remove('active-modal')
+      
+
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+
+  document.getElementById(name).classList.remove('personal-hidden');
+  document.getElementById(name).classList.add('personal-active');
+  event.currentTarget.className += " tab-personal-active";
+} 
+
+
+const swiperAdmin = new Swiper('.swiper-admin', {
+
+  navigation: {
+    nextEl: '.swiper-admin-button-next',
+    prevEl: '.swiper-admin-button-prev',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    870: {
+      slidesPerView: 1,
+      enabled: true,
+      spaceBetween: 20,
+    },
+    1000: {
+      slidesPerView: 1,
+      enabled: false,
+      spaceBetween: 40
+    }
+  }
+});
+
+const swiperTrack = new Swiper('.swiper-tracklist', {
+  speed: 400,
+  spaceBetween: 100,  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-track-button-next',
+    prevEl: '.swiper-track-button-prev',
+  },
+
+  breakpoints: {
+    // when window width is >= 320px
+    890: {
+      slidesPerView: 1,
+      enabled: true,
+      spaceBetween: 20,
+    },
+    1000: {
+      slidesPerView: 1,
+      enabled: false,
+      spaceBetween: 40
+    }
+  }
+});
