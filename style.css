@@ -220,10 +220,10 @@ input:active:focus {
 	width: 100%;
 	height: 100%;
 	background: #09b5e2;
-	background: -webkit-gradient(linear, right top, left top, from(rgba(89, 181, 226, 0.80)), to(#2680d6));
-	background: -o-linear-gradient(right, rgba(89, 181, 226, 0.80) 0%, #2680d6 100%);
-	background: linear-gradient(right, rgba(89, 181, 226, 0.80) 0%, #2680d6 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2680d6', endColorstr='#09b5e2', GradientType=1)
+	background: -webkit-gradient(linear, right top, left top, from(rgba(226, 189, 89, 0.616)), to(#fda686));
+	background: -o-linear-gradient(right, rgba(226, 189, 89, 0.616) 0%, #fda686 100%);
+	background: linear-gradient(right, rgba(226, 189, 89, 0.616) 0%, #fda686 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fda686', endColorstr='#fda686', GradientType=1)
 }
 
 .message-item {
@@ -231,11 +231,11 @@ input:active:focus {
 	bottom: -3px;
 	right: 10px;
 	z-index: 50;
-	background-color: #31B0D5;
+	background-color: #fda686;
 	color: #fff;
 	padding: 5px 15px;
 	border-radius: 4px;
-	border-color: #46b8da
+	border-color: #fda686
 }
 
 .message-grid {
@@ -394,9 +394,12 @@ input:active:focus {
 .btn-group-toggle>.btn {
 	margin-bottom: 5px
 }
-
+.count-button  .button_color_theme {
+	
+	background: #9fd4ff !important;
+}
 .count-button {
-	background: -webkit-linear-gradient(right, rgb(255, 153, 0), rgb(255, 102, 0));
+	background: #9fd4ff;
 	background-repeat: no-repeat;
 	border: 0;
 	border-radius: 30px;
@@ -510,7 +513,7 @@ input:active:focus {
 
 .join-button {
 	position: relative;
-	color: #fff;
+	color: #000;
 	background-repeat: no-repeat;
 	border: none;
 	border-radius: 40px;
@@ -519,7 +522,7 @@ input:active:focus {
 	outline: none;
 	font-size: 17px;
 	background-color: #fff;
-	background: -webkit-linear-gradient(right, rgb(255, 153, 0), rgb(255, 102, 0));
+	background: #9fd4ff;
 	-webkit-transition: .4s ease-out;
 	-o-transition: .4s ease-out;
 	transition: .4s ease-out;
@@ -568,7 +571,7 @@ input:active:focus {
 	background: -webkit-gradient(linear, right top, left top, from(#027fd5), to(#02c4d6));
 	background: -o-linear-gradient(right, #027fd5, #02c4d6);
 	background: linear-gradient(-90deg, #027fd5, #02c4d6);
-	background: -webkit-linear-gradient(right, rgb(255, 153, 0), rgb(255, 102, 0));
+	background: #9fd4ff;
 	background-repeat: no-repeat;
 	border: 1px solid #fff;
 	border-radius: 40px;
@@ -597,7 +600,7 @@ input:active:focus {
 	background-image: -webkit-gradient(linear, right top, left top, from(#027fd5), to(#02c4d6));
 	background-image: -o-linear-gradient(right, #027fd5, #02c4d6);
 	background-image: linear-gradient(-90deg, #027fd5, #02c4d6);
-	background: -webkit-linear-gradient(right, rgb(255, 153, 0), rgb(255, 102, 0));
+	background: #9fd4ff;
 	background-repeat: no-repeat;
 	border: 1px solid #fff;
 	border-radius: 40px;
@@ -1594,7 +1597,7 @@ a {
 	font-size: 13px
 }
 .footer-right button {
-	background: -webkit-linear-gradient(right, rgb(255, 153, 0), rgb(255, 102, 0));
+	background: #9fd4ff;
 	border-radius: 10px;
 }
 .start-btn {
@@ -1624,7 +1627,7 @@ a {
 	box-shadow: 0 0 52px -7px rgba(0, 0, 0, .75)
 }
 .start-btn:hover {
-	background: -webkit-linear-gradient(right, rgb(255, 153, 0), rgb(255, 102, 0));
+	background: #9fd4ff;
 	-webkit-transform: scale(1.03);
 	    -ms-transform: scale(1.03);
 	        transform: scale(1.03);
