@@ -103,7 +103,7 @@ body {
 .number {
   min-width: 64px;
   min-height: 30px;
-  background-color: #fda686;
+  background-color: #027fd5;
   position: relative;
   margin-top: 4px;
 }
@@ -124,4 +124,94 @@ body {
 }
 .footer {
   display: none;
+}
+
+.form-footer, .form-header, .form-body {
+  font-size: 18px;
+}
+.form-main {
+  display: flex;
+  width: 500px;
+  align-items: center;
+  margin-top: 100px;
+}
+.form-footer {
+  border: none;
+  border-radius: 50px;
+  
+}
+.form-body .form-control {
+  border-radius: 50px;
+  border: none;
+}
+.large-sign {
+  display: flex;
+}
+
+.large-form p {
+  max-width: 600px;
+}
+.large-img {
+  position: relative;
+  width: 40%;
+  display: block;
+}
+.large-img img::after {
+  content: 'Данный документ является образцом*';
+  position: absolute;
+  display: block;
+
+}
+.large-form {
+  
+  flex: 1 1 70%;
+}
+.form-footer button{
+  border: none;background: #9fd4ff;
+  color: #000;
+  padding: 8px .95rem;
+  border-radius: 50px;
+  margin-left: 30px;
+}
+.form-body input {
+  border: none;
+}
+
+@media (max-width:700px) {
+  .items-block {
+    display: block;
+  }
+  .form-body input {
+    margin-bottom: 20px;
+  }
+  .form-main {
+    text-align: left;
+    justify-content: left;
+  }
+  .large-sign, .form-main {
+    flex-direction: column;
+  }
+  .form-footer button{
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .large-sign-wrapper .large-sign p {
+    margin-top: 50px;
+  }
+  .large-form p {
+    max-width: 100%;
+    text-align: center;
+  }
+  .form-main {
+    width: 100%;
+  }
+  .large-img {
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .start-section {
+    height: 100% !important;
+    padding-bottom: 50px !important;
+  }
 }

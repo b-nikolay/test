@@ -80,20 +80,26 @@
       <!--<button type="button" class="count-button" data-toggle="modal" data-target="#messageModal" id="visible-count-button">Заказать обратный звонок</button>-->
     </div>
     <div class="large-sign-wrapper">
-      <div class="large-sign">
-        <p>Специалисты НРС с аттестацией НОК для вступления в СРО и успешного прохождения проверок СРО.<br>Аренда от 10
-          000 руб!</p>
-        <hr>
-        <h4>Вы получите уже внесённых в НРС специалистов с официальным трудоустройством и оригиналом трудовой книжки
-        </h4>
-        <!--<button type="button" class="join-button button_color_theme" data-toggle="modal" data-target="#auditModal">Заказать аудит бесплатно</button>-->
-        <button type="button" class="join-button button_color_theme" data-toggle="modal"
-          data-target="#auditSpec">Получить
-          специалистов</button>
-        <button type="button" class="join-button button_color_theme" data-toggle="modal"
-          data-target="#quizModal">Рассчитать
-          стоимость</button>
-        <!-- <a data-scroll href="#calculator"><button type="button" class="price-button" id="hidden">Рассчитать стоимость</button></a> -->
+        <div class="large-sign">
+          <div class="large-form">
+            <p>Сертификат ISO от 3500 за 1 час без посредников с гарантией по договору. </p>
+            <form class="form-main" method="POST" action="mail.php" enctype="multipart/form-data"">
+            <input name="form_subject" value="Бесплатная консультация" type="hidden">
+           
+            <div class="form-body">
+              <input class="form-control phone" placeholder="Введите номер телефона*" name="Телефон" required="required">
+           
+            </div>
+            <div class="form-footer">
+              <button class="count-button" type="submit">Бесплатная консультация</button>
+            </div>
+          </form>
+          </div>
+          
+      <img src="images/test.png" class="large-img" alt="">
+      </div>
+
+      
       </div>
     </div>
   </section>

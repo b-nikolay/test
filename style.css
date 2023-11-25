@@ -205,10 +205,13 @@ input:active:focus {
 }
 .start-section {
 	background: url(images/1.jpg);
-	background-size: 100% 705px;
-	background-repeat: no-repeat;
-	height: 700px;
-	position: relative
+	background-repeat: repeat;
+	background-size: auto;
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+position: relative;
+padding-bottom: 50px;
 }
 
 .start-section::before {
@@ -220,10 +223,10 @@ input:active:focus {
 	width: 100%;
 	height: 100%;
 	background: #09b5e2;
-	background: -webkit-gradient(linear, right top, left top, from(rgba(226, 189, 89, 0.616)), to(#fda686));
-	background: -o-linear-gradient(right, rgba(226, 189, 89, 0.616) 0%, #fda686 100%);
-	background: linear-gradient(right, rgba(226, 189, 89, 0.616) 0%, #fda686 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fda686', endColorstr='#fda686', GradientType=1)
+	background: -webkit-gradient(linear, right top, left top, from(rgba(91, 89, 226, 0.616)), to(#027fd5));
+	background: -o-linear-gradient(right, rgba(91, 89, 226, 0.616) 0%, #027fd5 100%);
+	background: linear-gradient(right, rgba(91, 89, 226, 0.616)0%, #027fd5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#027fd5', endColorstr='#027fd5', GradientType=1)
 }
 
 .message-item {
@@ -231,11 +234,11 @@ input:active:focus {
 	bottom: -3px;
 	right: 10px;
 	z-index: 50;
-	background-color: #fda686;
+	background-color: #027fd5;
 	color: #fff;
 	padding: 5px 15px;
 	border-radius: 4px;
-	border-color: #fda686
+	border-color: #027fd5
 }
 
 .message-grid {
@@ -687,8 +690,8 @@ button:active {
 .large-sign-wrapper .large-sign {
 	color: #fff;
 	font-size: 40px;
-	text-align: center;
-	max-width: 900px
+	text-align: left;
+	max-width: 1127px
 }
 
 .large-sign-wrapper .large-sign p {
@@ -1285,7 +1288,7 @@ a {
 .tariffs .item {
 	width: 31%;
 	height: 330px;
-	background: #027FD5;
+	background: #027fd5;
 	border-radius: 5px;
 	position: relative;
 	padding: 25px 100px 30px 30px;
@@ -1481,7 +1484,7 @@ a {
 .execution-order .item-img {
 	width: 100px;
 	height: 100px;
-	border: 1px solid #027FD5;
+	border: 1px solid #027fd5;
 	border-radius: 50%;
 	margin: auto;
 	background: no-repeat center;
@@ -1490,7 +1493,7 @@ a {
 
 .execution-order .item-title {
 	margin-top: 15px;
-	color: #027FD5
+	color: #027fd5
 }
 
 .arrow-separator {
@@ -2628,7 +2631,7 @@ form .modal-policy {
 		color: #444
 	}
 	.accordion.active {
-		background: #027FD5!important;
+		background: #027fd5!important;
 		color: #fff!important
 	}
 	.accordion:after {
@@ -3222,8 +3225,8 @@ form .modal-policy {
 	background-image: -webkit-gradient(linear, left top, right top, from(var(--color-darken10)), to(var(--color-lighten10)));
 	background-image: -o-linear-gradient(left, var(--color-darken10), var(--color-lighten10));
 	background-image: linear-gradient(90deg, var(--color-darken10), var(--color-lighten10));
-	-webkit-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4), .6px 1.9px 7px 0 #027FD5;
-	box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4), .6px 1.9px 7px 0 #027FD5;
+	-webkit-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4), .6px 1.9px 7px 0 #027fd5;
+	box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4), .6px 1.9px 7px 0 #027fd5;
 	position: relative;
 	overflow: hidden;
 	-webkit-transition: all .3s ease;
@@ -3238,7 +3241,7 @@ form .modal-policy {
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background: #027FD5;
+	background: #027fd5;
 	z-index: 1;
 	background-size: 20px 20px;
 	-webkit-animation: move 1.5s linear infinite;
@@ -3285,9 +3288,9 @@ form .modal-policy {
 
 .quiz-buttons .quiz-buttons__button_next {
 	color: #fff;
-	background-color: #027FD5!important;
-	-webkit-box-shadow: 0 3px 10px 0 #027FD5;
-	box-shadow: 0 3px 10px 0 #027FD5;
+	background-color: #027fd5!important;
+	-webkit-box-shadow: 0 3px 10px 0 #027fd5;
+	box-shadow: 0 3px 10px 0 #027fd5;
 	will-change: box-shadow;
 	width: 110px;
 	-webkit-transition: -webkit-box-shadow .2s ease-in;
@@ -3391,7 +3394,7 @@ form .modal-policy {
 	bottom: -17px;
 	-webkit-transform: scaleX(-1) rotate(180deg);
 	transform: scaleX(-1) rotate(180deg);
-	fill: #027FD5;
+	fill: #027fd5;
 }
 
 .final-page .final-page-header .final-page__icon path {
@@ -3469,7 +3472,7 @@ form .modal-policy {
 	border-radius: 5px;
 	font-size: 18px!important;
 	padding: 12px 30px;
-	background: #027FD5;
+	background: #027fd5;
 	cursor: pointer;
 	border: none;
 	line-height: 1.3rem;
