@@ -153,7 +153,7 @@ body {
 }
 .large-img {
   position: relative;
-  width: 40%;
+  width: 25%;
   display: block;
 }
 .large-img img::after {
