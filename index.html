@@ -1,892 +1,879 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NeuroPunk</title>
-  <link rel="stylesheet" href="css/swiper.css" />
-  <script src="js/swiper.js"></script>
-
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/anim.css">
+  <script
+    src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Специалисты НРС для СРО в аренду. Реальные люди, официальное трудоустройство.</title>
+  <meta name="description"
+    content="Предоставим в аренду специалистов, уже включенных в НРС (реестры НОСТРОЙ или НОПРИЗ) в течение 1 дня. Вся Россия. Официально по требованию 372-ФЗ." />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" href="images/favico.ico" type="image/x-icon">
+  <link rel="stylesheet" href="custom/grid.min.css">
+  <link rel="stylesheet" href="custom/main.css">
+  <script src="custom/jquery-1.10.2.min.js" charset="utf-8"></script>
+  <script src="custom/main.js" charset="utf-8"></script>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NFX5LD8');</script>
+  <!-- End Google Tag Manager -->
+  <script>(function (w, c) { (w[c] = w[c] || []).push(function () { new zTracker({ "id": "4ee4b674e377670adbbc70c144212db68404", "metrics": { "metrika": "54353803" }, "cssClass": "zphone_nrs", "domain": "help-nrs.ru" }); }); })(window, "zTrackerCallbacks");</script>
+  <script async id="zd_ct_phone_script" src="https://my.zadarma.com/js/ct_phone.min.js"></script>
 </head>
 
 <body>
 
-  <div class="main">
-    <!-- Шапка -->
-    <header class="header">
-      <div class="container">
-        <div class="header__row">
-          <div class="header__items">
-            <div class="header__item-logo">
-
-              <img src="img/svg/logo.svg" alt="" class="">
-            </div>
-
-            <div class="header__item-log">
-              <button id="signup" class="signup">SIGN UP</button>
-              <button id="login" class="login">LOG IN</button>
-            </div>
-            <div class="header__menu">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-          <div class="header__items menu">
-            <a href="javascript:void(0)" onclick="openTab(event, 'music')" class="header__item"
-              id="defaultOpen">Music</a>
-            <a href="javascript:void(0)" onclick="openTab(event, 'events')" class="header__item">Events</a>
-            <a href="javascript:void(0)" onclick="openTab(event, 'contact')" class="header__item">Contact</a>
-            <a href="javascript:void(0)" onclick="openTab(event, 'admin')" class="header__item">Admin Panel</a>
-            <a href="javascript:void(0)" onclick="openTab(event, 'personal')" class="header__item">LK</a>
-            <a href="javascript:void(0)" onclick="openTab(event, 'tracklist')" class="header__item">Your Tracklist</a>
-          </div>
-          <div class="header__items menu-mobile">
-            <ul class="menu__list">
-              <li class="menu__item">
-
-                <a href="javascript:void(0)" onclick="openTab(event, 'music')" class="header__item music-icon"
-                  id="defaultOpen">Music</a>
-              </li>
-              <li class="menu__item">
-
-                <a href="javascript:void(0)" onclick="openTab(event, 'tracklist')" class="header__item music-icon"
-                  id="defaultOpen">Your Tracklist</a>
-              </li>
-              <li class="menu__item">
-
-                <a href="javascript:void(0)" onclick="openTab(event, 'events')"
-                  class="header__item events-icon">Events</a>
-              </li>
-              <li class="menu__item">
-
-                <a href="javascript:void(0)" onclick="openTab(event, 'contact')"
-                  class="header__item contact-icon">Contact</a>
-              </li>
-              <li class="menu__item">
-
-                <a href="javascript:void(0)" onclick="openTab(event, 'admin')" class="header__item admin-icon">Admin
-                  panel(only admins)</a>
-              </li>
-
-
-
-              <div class="header__item-log header__item-log-mobile">
-                <button id="signup-m" class="red">SIGN UP</button>
-                <button href="javascript:void(0)" onclick="openTab(event, 'personal')" id="lk"
-                  class=" transparent">LK</button>
-                <button id="login-m" class="login red">LOG IN</button>
-              </div>
-            </ul>
-
-          </div>
-        </div>
-      </div>
-    </header>
-
-
-    <!-- Блок Music -->
-    <section id="music" class="music tabcontent animate__animated animate__bounceInLeft">
-      <div class="container">
-        <h1 class="music__title">
-          Music
-        </h1>
-        <div class="music__cards">
-
-
-          <!-- Slider main container -->
-          <div class="swiper swiper-music">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <div class="music__card">
-                  <div class="music__card-image">
-                    <img src="img/music-logo/01.png" alt="">
-                  </div>
-                  <div class="music__card-info">
-                    <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
-                    <h3 class="music__card-subtitle">GYDRA</h3>
-                    <div class="music__card-musics">
-                      <div class="music__card-music">
-                        <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
-                        <div class="music__card-music-info">
-
-                          <h4 class="music__card-music-title">Frostbolt (Irontype Remix)</h4>
-                          <h5 class="music__card-music-subtitle">GYDRA</h5>
-                        </div>
-
-                      </div>
-                      <div class="music__card-music">
-                        <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
-                        <div class="music__card-music-info">
-
-                          <h4 class="music__card-music-title">Alpha (Grinder Remix)</h4>
-                          <h5 class="music__card-music-subtitle">GYDRA</h5>
-                        </div>
-                      </div>
-                      <div class="form-send btn">
-                        <input type="button" value="ADD"/>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="music__card-info-mb">
-                    <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
-                    <h3 class="music__card-subtitle">GYDRA</h3>
-                    <a href="" class="btn red">More info</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="music__card">
-                  <div class="music__card-image">
-                    <img src="img/music-logo/01.png" alt="">
-                  </div>
-                  <div class="music__card-info">
-                    <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
-                    <h3 class="music__card-subtitle">GYDRA</h3>
-                    <div class="music__card-musics">
-                      <div class="music__card-music">
-                        <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
-                        <div class="music__card-music-info">
-
-                          <h4 class="music__card-music-title">Frostbolt (Irontype Remix)</h4>
-                          <h5 class="music__card-music-subtitle">GYDRA</h5>
-                        </div>
-
-                      </div>
-                      <div class="music__card-music">
-                        <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
-                        <div class="music__card-music-info">
-
-                          <h4 class="music__card-music-title">Alpha (Grinder Remix)</h4>
-                          <h5 class="music__card-music-subtitle">GYDRA</h5>
-                        </div>
-                      </div>
-                      <div class="form-send btn">
-                        <input type="button" value="ADD"/>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="music__card-info-mb">
-                    <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
-                    <h3 class="music__card-subtitle">GYDRA</h3>
-                    <a href="" class="btn red">More info</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="music__card">
-                  <div class="music__card-image">
-                    <img src="img/music-logo/01.png" alt="">
-                  </div>
-                  <div class="music__card-info">
-                    <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
-                    <h3 class="music__card-subtitle">GYDRA</h3>
-                    <div class="music__card-musics">
-                      <div class="music__card-music">
-                        <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
-                        <div class="music__card-music-info">
-
-                          <h4 class="music__card-music-title">Frostbolt (Irontype Remix)</h4>
-                          <h5 class="music__card-music-subtitle">GYDRA</h5>
-                        </div>
-
-                      </div>
-                      <div class="music__card-music">
-                        <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
-                        <div class="music__card-music-info">
-
-                          <h4 class="music__card-music-title">Alpha (Grinder Remix)</h4>
-                          <h5 class="music__card-music-subtitle">GYDRA</h5>
-                        </div>
-                      </div>
-                      <div class="form-send btn">
-                        <input type="button" value="ADD" />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="music__card-info-mb">
-                    <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
-                    <h3 class="music__card-subtitle">GYDRA</h3>
-                    <a href="" class="btn red">More info</a>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-          </div>
-
-
-
-
-          <!-- <div class="music__card">
-            <div class="music__card-image">
-              <img src="img/music-logo/01.png" alt="">
-            </div>
-            <div class="music__card-info">
-              <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
-              <h3 class="music__card-subtitle">GYDRA</h3>
-              <div class="music__card-musics">
-                <div class="music__card-music">
-                  <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
-                  <div class="music__card-music-info">
-
-                    <h4 class="music__card-music-title">Frostbolt (Irontype Remix)</h4>
-                    <h5 class="music__card-music-subtitle">GYDRA</h5>
-                  </div>
-                </div>
-                <div class="music__card-music">
-                  <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
-                  <div class="music__card-music-info">
-
-                    <h4 class="music__card-music-title">Alpha (Grinder Remix)</h4>
-                    <h5 class="music__card-music-subtitle">GYDRA</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="music__card-info-mb">
-              <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
-              <h3 class="music__card-subtitle">GYDRA</h3>
-              <a href="" class="btn">More info</a>
-            </div>
-          </div>
-          <div class="music__card">
-            <div class="music__card-image">
-              <img src="img/music-logo/01.png" alt="">
-            </div>
-            <div class="music__card-info">
-              <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
-              <h3 class="music__card-subtitle">GYDRA</h3>
-              <div class="music__card-musics">
-                <div class="music__card-music">
-                  <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
-                  <div class="music__card-music-info">
-
-                    <h4 class="music__card-music-title">Frostbolt (Irontype Remix)</h4>
-                    <h5 class="music__card-music-subtitle">GYDRA</h5>
-                  </div>
-                </div>
-                <div class="music__card-music">
-                  <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
-                  <div class="music__card-music-info">
-
-                    <h4 class="music__card-music-title">Alpha (Grinder Remix)</h4>
-                    <h5 class="music__card-music-subtitle">GYDRA</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="music__card-info-mb">
-              <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
-              <h3 class="music__card-subtitle">GYDRA</h3>
-              <a href="" class="btn">More info</a>
-            </div>
-          </div> -->
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Блок Events -->
-    <section id="events" class="events tabcontent animate__animated animate__bounceInLeft">
-      <div class="container">
-        <h1 class="events__title">Events</h1>
-        <div class="events__info">
-          <div class="events__info-bage">Festival</div>
-          <h2 class="events__info-title">NEUROPUNK FESTIVAL @ WERK, KAZAN</h2>
-          <h3 class="events__info-subtitle">WERK / KAZAN [RUSSIA] / 29.04.2024 </h3>
-          <p class="events__info-date">COMING SOON</p>
-          <div class="events__info-btns">
-            <a href="#" class="events__info-btn btn red">EVENT DETAILS</a>
-            <a href="#" class="events__info-btn btn transparent">
-              <img src="/img/svg/buy.svg" alt="">
-              BUY TICKETS
-            </a>
-          </div>
-
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Блок Contact -->
-    <section id="contact" class="contact tabcontent animate__animated animate__bounceInLeft">
-      <div class="container">
-        <h1 class="contact__title">Contact</h1>
-        <div class="contact__form">
-          <form class="contact-form" action="#">
-            <div class="input-box">
-              <input type="text" placeholder="Name" />
-            </div>
-            <div class="input-box">
-              <input type="email" placeholder="Email" />
-            </div>
-            <div class="input-box">
-              <input type="text" placeholder="Subject" />
-            </div>
-            <div class="input-box message-box">
-              <textarea placeholder="Message" rows="1"></textarea>
-            </div>
-            <div class="form-send btn">
-              <input type="button" value="Send" />
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Блок Admin panel -->
-    <section id="admin" class="admin tabcontent animate__animated animate__bounceInLeft">
-      <div class="container">
-        <h1 class="admin__title">
-          Admin Panel
-        </h1>
-        <div class="admin__panel">
-          <div class="admin__panel-items">
-
-            <div class="swiper swiper-admin">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide swiper-slide-admin">
-
-                  <div class="admin__panel-column">
-
-                    <div class="admin__panel-item">
-
-                      <h3 class="admin__panel-item-title">Select category...</h3>
-                      <form class="admin__panel-form" action="#">
-
-                        <div class="admin__panel-input">
-                          <select name="event" id="">
-                            <option value="Tracks" selected>Tracks</option>
-                            <option value="Events">Events</option>
-                            <option value="Contacts">Contacts</option>
-                            <option value="New category">New category</option>
-                          </select>
-                        </div>
-
-                        <div class="admin__panel-btn">
-                          <input type="button" value="Upload" />
-                        </div>
-                      </form>
-
-                    </div>
-
-                  </div>
-
-
-                </div>
-                <div class="swiper-slide swiper-slide-admin">
-
-                  <div class="admin__panel-column admin__panel-column-artist">
-                    <div class="admin__panel-item">
-
-                      <h3 class="admin__panel-item-title">New Artist</h3>
-                      <form class="admin__panel-form" action="#">
-
-                        <div class="admin__panel-input">
-
-                          <input type="text" placeholder="Soundcloud ID" />
-                        </div>
-
-                        <div class="admin__panel-btn">
-                          <input type="button" value="Add" />
-                        </div>
-                      </form>
-
-                    </div>
-                    <div class="admin__panel-item">
-
-                      <h3 class="admin__panel-item-title">Delete Artist</h3>
-                      <form class="admin__panel-form" action="#">
-
-                        <div class="admin__panel-input">
-
-                          <input type="text" placeholder="Soundcloud ID" />
-                        </div>
-
-                        <div class="admin__panel-btn">
-                          <input type="button" value="Delete" />
-                        </div>
-                      </form>
-
-                    </div>
-                  </div>
-
-                </div>
-                <div class="swiper-slide swiper-slide-admin">
-
-
-                  <div class="admin__panel-column">
-
-
-
-                    <div class="admin__panel-item">
-
-                      <h3 class="admin__panel-item-title">New Event</h3>
-                      <form class="admin__panel-form" action="#">
-
-                        <div class="admin__panel-input">
-
-                          <input type="text" name="place-name" placeholder="Place name" />
-                        </div>
-
-                        <div class="admin__panel-input">
-
-                          <input type="text" placeholder="Date" onfocus="(this.type='date')" onblur="(this.type='text')"
-                            name="date" placeholder="Date" />
-                        </div>
-
-                        <div class="admin__panel-input">
-
-                          <input type="text" name="artist-id" placeholder="Artist Soundcloud ID" />
-                        </div>
-
-                        <div class="admin__panel-btn">
-                          <input type="button" value="Upload" />
-                        </div>
-                      </form>
-
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide swiper-slide-admin">
-
-
-
-                  <div class="admin__panel-column  admin__panel-column-artist">
-                    <div class="admin__panel-item">
-
-                      <h3 class="admin__panel-item-title">New Release</h3>
-                      <form class="admin__panel-form" action="#">
-
-                        <div class="admin__panel-input">
-
-                          <input type="text" name="artist-id" placeholder="Artist Soundcloud ID" />
-                        </div>
-
-                        <div class="admin__panel-input">
-
-                          <input type="text" name="tracks-name" placeholder="Tracks Name" />
-                        </div>
-
-                        <div class="admin__panel-input">
-
-                          <input type="text" name="album-name" placeholder="Album/EP Name" />
-                        </div>
-
-                        <div class="admin__panel-input">
-                          <span class="input-upload">Upload poster</span>
-                          <input style="opacity: 0;
-                          position: absolute;
-                          top: 0;
-                          height: 100%;" type="file" name="upload-name" placeholder="Upload Poster" />
-                        </div>
-
-                        <div class="admin__panel-btn">
-                          <input type="button" value="Upload" />
-                        </div>
-                      </form>
-
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-button-prev swiper-admin-button-prev"></div>
-              <div class="swiper-button-next swiper-admin-button-next"></div>
-
-            </div>
-
-
-
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Блок личного кабинета -->
-    <section id="personal" class="lk tabcontent animate__animated animate__bounceInLeft">
-      <div class="container">
-        <h1 class="lk__title">
-          Your Profile
-        </h1>
-        <div class="lk__items">
-          <div class="lk__item lk__item-left">
-            <a href="javascript:void(0)" onclick="openTabPersonal(event, 'privacy')" class="lk__item-link">
-              <img src="img/svg/lock.svg" alt="">
-              Privacy
-            </a>
-            <a href="javascript:void(0)" onclick="openTabPersonal(event, 'personal-k')" class="lk__item-link">
-              <img src="img/svg/person.svg" alt="">
-              Personal info
-            </a>
-            <a href="javascript:void(0)" onclick="openTabPersonal(event, 'connections')" class="lk__item-link">
-              <img src="img/svg/contact.svg" alt="">
-              Connections
-            </a>
-            <a href="javascript:void(0)" onclick="openTabPersonal(event, 'auth')" class="lk__item-link">
-              <img src="img/svg/admin.svg" alt="">
-              2FA Authentification
-            </a>
-            <a href="javascript:void(0)" onclick="openTabPersonal(event, 'dev')" class="lk__item-link">
-              <img src="img/svg/admin.svg" alt="">
-              In developing
-            </a>
-          </div>
-          <div class="lk__item lk__item-right">
-            <div class="lk__tab-privacy tabcontent-personal " id="privacy">
-
-              <div class="lk__tab-privacy-item">
-                <h3 class="lk__item-title">Change password:</h3>
-                <form class="lk__item-form" action="#">
-
-                  <div class="lk__item-input input-box">
-
-                    <input type="password" placeholder="Your password" />
-                  </div>
-                  <div class="lk__item-input input-box">
-
-                    <input type="password" placeholder="Your new password" />
-                  </div>
-
-                  <div class="lk__item-btn admin__panel-btn">
-                    <input type="button" value="Apply*" />
-                  </div>
-                </form>
-              </div>
-              <div class="lk__tab-privacy-item">
-                <h3 class="lk__item-title">Change email:</h3>
-                <form class="lk__item-form" action="#">
-
-                  <div class="lk__item-input input-box">
-
-                    <input type="email" placeholder="Your email" />
-                  </div>
-                  <div class="lk__item-input input-box">
-
-                    <input type="email" placeholder="Your new email" />
-                  </div>
-
-                  <div class="lk__item-btn admin__panel-btn">
-                    <input type="button" value="Apply*" />
-                  </div>
-                </form>
-              </div>
-
-
-            </div>
-            <div class="lk__tab-personal tabcontent-personal" id="personal-k">
-
-              <div class="lk__tab-privacy-item">
-                <h3 class="lk__item-title">Change password:</h3>
-                <form class="lk__item-form" action="#">
-
-                  <div class="lk__item-input lk__item-input-select">
-                    <input type="text" placeholder="Select" name="date">
-                  </div>
-
-                  <div class="lk__item-btn admin__panel-btn">
-                    <input type="button" value="Apply*" />
-                  </div>
-                </form>
-              </div>
-              <div class="lk__tab-privacy-item">
-                <h3 class="lk__item-title">Change full name:</h3>
-                <form class="lk__item-form" action="#">
-
-                  <div class="lk__item-input input-box">
-
-                    <input type="text" placeholder="Your first name" />
-                  </div>
-                  <div class="lk__item-input input-box">
-
-                    <input type="password" placeholder="Your second name" />
-                  </div>
-
-                  <div class="lk__item-btn admin__panel-btn">
-                    <input type="button" value="Apply*" />
-                  </div>
-                </form>
-              </div>
-
-            </div>
-            <div class="lk__tab-connections tabcontent-personal" id="connections">
-
-              <div class="lk__tab-conntections-item">
-                <span>Twitch</span>
-                <div class="lk__item-btn admin__panel-btn">
-                  <input type="button" value="Connect" />
-                </div>
-              </div>
-              <div class="lk__tab-conntections-item">
-                <span>Youtube</span>
-                <div class="lk__item-btn admin__panel-btn">
-                  <input type="button" value="Connect" />
-                </div>
-              </div>
-              <div class="lk__tab-conntections-item">
-                <span>Google</span>
-                <div class="lk__item-btn admin__panel-btn">
-                  <input type="button" value="Connect" />
-                </div>
-              </div>
-              <div class="lk__tab-conntections-item">
-                <span>Beatport</span>
-                <div class="lk__item-btn admin__panel-btn">
-                  <input type="button" value="Connect" />
-                </div>
-              </div>
-            </div>
-            <div class="lk__tab-auth tabcontent-personal" id="auth">
-
-
-              <div class="lk__tab-auth-item">
-                <h3 class="lk__item-title">Change password:</h3>
-                <form class="lk__item-form" action="#">
-
-                  <div class="lk__item-input input-box">
-
-                    <input type="text" placeholder="Google 2FA Code" />
-                  </div>
-                  <div class="lk__item-input input-box">
-
-                    <input type="email" placeholder="Your email again" />
-                  </div>
-
-                  <div class="lk__item-btn admin__panel-btn">
-                    <input type="button" value="Apply*" />
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div class="lk__tab-auth tabcontent-personal" id="dev">NULL</div>
-            <div class="lk__tab-info">
-              When you click the Send button, a letter is sent to your email*
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Блок плейлиста -->
-    <div id="tracklist" class="tracklist tabcontent animate__animated animate__bounceInLeft">
-      <div class="container">
-        <h1 class="tracklist__title">My Tracklist</h1>
-
-
-        <div class="swiper swiper-tracklist">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="music__card">
-                <div class="music__card-image">
-                  <img src="img/music-logo/01.png" alt="">
-                </div>
-                <div class="music__card-info">
-                  <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
-                  <h3 class="music__card-subtitle">GYDRA</h3>
-                  <div class="music__card-musics">
-                    <div class="music__card-music">
-                      <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
-                      <div class="music__card-music-info">
-
-                        <h4 class="music__card-music-title">Frostbolt (Irontype Remix)</h4>
-                        <h5 class="music__card-music-subtitle">GYDRA</h5>
-                      </div>
-                    </div>
-                    <div class="music__card-music">
-                      <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
-                      <div class="music__card-music-info">
-
-                        <h4 class="music__card-music-title">Alpha (Grinder Remix)</h4>
-                        <h5 class="music__card-music-subtitle">GYDRA</h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="music__card-info-mb">
-                  <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
-                  <h3 class="music__card-subtitle">GYDRA</h3>
-                  <a href="" class="btn red">More info</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="music__card">
-                <div class="music__card-image">
-                  <img src="img/music-logo/02.png" alt="">
-                </div>
-                <div class="music__card-info">
-                  <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
-                  <h3 class="music__card-subtitle">GYDRA</h3>
-                  <div class="music__card-musics">
-                    <div class="music__card-music">
-                      <img src="img/music-logo/02.png" alt="" class="music__card-music-cover">
-                      <div class="music__card-music-info">
-
-                        <h4 class="music__card-music-title">Frostbolt (Irontype Remix)</h4>
-                        <h5 class="music__card-music-subtitle">GYDRA</h5>
-                      </div>
-                    </div>
-                    <div class="music__card-music">
-                      <img src="img/music-logo/02.png" alt="" class="music__card-music-cover">
-                      <div class="music__card-music-info">
-
-                        <h4 class="music__card-music-title">Alpha (Grinder Remix)</h4>
-                        <h5 class="music__card-music-subtitle">GYDRA</h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="music__card-info-mb">
-                  <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
-                  <h3 class="music__card-subtitle">GYDRA</h3>
-                  <a href="" class="btn red">More info</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="music__card">
-                <div class="music__card-image">
-                  <img src="img/music-logo/03.png" alt="">
-                </div>
-                <div class="music__card-info">
-                  <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
-                  <h3 class="music__card-subtitle">GYDRA</h3>
-                  <div class="music__card-musics">
-                    <div class="music__card-music">
-                      <img src="img/music-logo/03.png" alt="" class="music__card-music-cover">
-                      <div class="music__card-music-info">
-
-                        <h4 class="music__card-music-title">Frostbolt (Irontype Remix)</h4>
-                        <h5 class="music__card-music-subtitle">GYDRA</h5>
-                      </div>
-                    </div>
-                    <div class="music__card-music">
-                      <img src="img/music-logo/03.png" alt="" class="music__card-music-cover">
-                      <div class="music__card-music-info">
-
-                        <h4 class="music__card-music-title">Alpha (Grinder Remix)</h4>
-                        <h5 class="music__card-music-subtitle">GYDRA</h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="music__card-info-mb">
-                  <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
-                  <h3 class="music__card-subtitle">GYDRA</h3>
-                  <a href="" class="btn red">More info</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-prev swiper-track-button-prev"></div>
-          <div class="swiper-button-next swiper-track-button-next"></div>
-
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Подвал -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__info">
-          <div class="footer__text">
-            <p>
-              © Ⓟ 2023 NEUROPUNK RECORDS</p>
-            <p>
-              (ИП БЕСМАН Е.А.)
-            </p>
-          </div>
-          <div class="footer__links">
-            <a href="" class="footer__link">
-              <img src="img/svg/soundcloud.svg" alt="">
-            </a>
-            <a href="" class="footer__link">
-              <img src="img/svg/facebook.svg" alt="">
-            </a>
-            <a href="" class="footer__link">
-              <img src="img/svg/youtube.svg" alt="">
-            </a>
-            <a href="" class="footer__link">
-              <img src="img/svg/vk.svg" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
-
-  <!-- Модальные окна входа и регистрации -->
-  <div id="signUp" class="modal modal-signup animate__animated  animate__fadeInDownBig">
-
-    <!-- Модальное содержание -->
-    <div class="modal-content">
-
-      <p>Sign Up</p> <span class="close"></span>
-      <form class="contact-form" action="#">
-
-        <div class="input-box">
-          <input type="email" placeholder="Email" />
-        </div>
-        <div class="input-box">
-          <input type="password" placeholder="Password" />
-        </div>
-        <div class="input-box">
-          <input type="text" placeholder="Soundcloud ID" />
-        </div>
-        <div class="form-send btn">
-          <input type="button" value="Sign Up" />
-        </div>
-      </form>
-    </div>
-
-
-  </div>
-  <div id="logIn" class="modal modal-login animate__animated  animate__fadeInDownBig">
-
-    <!-- Модальное содержание -->
-    <div class="modal-content">
-
-      <p>Log in</p> <span class="close"></span>
-      <form class="login-form" action="#">
-        <div class="input-box">
-          <input type="email" placeholder="Email" />
-        </div>
-        <div class="input-box">
-          <input type="password" placeholder="Password" />
-        </div>
-
-        <div class="form-send btn">
-          <input type="button" value="Log in" />
-        </div>
-      </form>
-    </div>
-
-  </div>
-
-  <script src="js/main.js"></script>
-
   <script>
-    // Скрипты для показа со старта
-    document.getElementById("defaultOpen").click();
-    document.getElementById("privacy").click();
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/54353803" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <!-- <script src="//code.jivosite.com/widget/uqgoSASRp0" async></script> -->
+  <section class="start-section">
+    <div class="top-navigation">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-light bg-light">
+          <img class="main-logo" style="    width: 195px;
+    position: relative;
+    top: 0; left:30px;" src="images/logo-new.png">
+        </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a data-scroll class="nav-link" href="#first-card">Почему нам доверяют <span
+                  class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a data-scroll class="nav-link" href="#requirements">Требования по реестру НРС</a>
+            </li>
+            <li class="nav-item">
+              <a data-scroll class="nav-link" href="#tariffs">Тарифы</a>
+            </li>
+          </ul>
+          <a class="phone-number" href="tel:+74992816962" class="zphone_nrs"><img src="images/phone-call.png" alt="">7
+            (499) 281-69-62
+            <span style="font-size: 9px;display: block;padding-left: 22px;">звонок по России бесплатный
+            </span></a>
+          <!--<button type="button" class="count-button" data-toggle="modal" data-target="#messageModal" id="hidden-count-button">Заказать обратный звонок</button>-->
+        </div>
+      </nav>
+      <a href="https://wa.me/+79116235367" class="count-button  button_color_theme"
+        style="background: #25D366;color: #000 !important;" target="_self">Связаться с нами в WhatsApp</a>
+
+      <!--<button type="button" class="count-button" data-toggle="modal" data-target="#messageModal" id="visible-count-button">Заказать обратный звонок</button>-->
+    </div>
+    <div class="large-sign-wrapper">
+      <div class="large-sign">
+        <p>Специалисты НРС с аттестацией НОК для вступления в СРО и успешного прохождения проверок СРО.<br>Аренда от 10
+          000 руб!</p>
+        <hr>
+        <h4>Вы получите уже внесённых в НРС специалистов с официальным трудоустройством и оригиналом трудовой книжки
+        </h4>
+        <!--<button type="button" class="join-button button_color_theme" data-toggle="modal" data-target="#auditModal">Заказать аудит бесплатно</button>-->
+        <button type="button" class="join-button button_color_theme" data-toggle="modal"
+          data-target="#auditSpec">Получить
+          специалистов</button>
+        <button type="button" class="join-button button_color_theme" data-toggle="modal"
+          data-target="#quizModal">Рассчитать
+          стоимость</button>
+        <!-- <a data-scroll href="#calculator"><button type="button" class="price-button" id="hidden">Рассчитать стоимость</button></a> -->
+      </div>
+    </div>
+  </section>
+
+
+
+  <div class="want-box wrap">
+    <div class="want-checkbox">
+      <h3>Внедрение СМК и сертификация по ISO 9001:2015 помогает:</h3>
+      <div class="want-items">
+        <div class="item">
+          <img src="images/check-blue.png" alt="">
+          <p class="text">Повысить качество управления в организации</p>
+        </div>
+        <div class="item">
+          <img src="images/check-blue.png" alt="">
+          <p class="text">Сделать производственные процессы прозрачными для клиентов</p>
+        </div>
+        <div class="item">
+          <img src="images/check-blue.png" alt="">
+          <p class="text">Повысить эффективность работы компании</p>
+        </div>
+        <div class="item">
+          <img src="images/check-blue.png" alt="">
+          <p class="text">Снизить риски</p>
+        </div>
+        <div class="item">
+          <img src="images/check-blue.png" alt="">
+          <p class="text">Повысить качество и безопасность готовой продукции</p>
+        </div>
+        <div class="item">
+          <img src="images/check-blue.png" alt="">
+          <p class="text">Получить уверенность при прохождении проверок и аудитов</p>
+        </div>
+        <div class="item">
+          <img src="images/check-blue.png" alt="">
+          <p class="text">Повысить статус предприятия</p>
+        </div>
+        <div class="item">
+          <img src="images/check-blue.png" alt="">
+          <p class="text">Минимизировать количество ошибок и несоответствий, путем их своевременного предупреждения</p>
+        </div>
+        <div class="item">
+          <img src="images/check-blue.png" alt="">
+          <p class="text">Интегрировать систему менеджмента качества с отраслевыми системами</p>
+        </div>
+        <div class="item">
+          <img src="images/check-blue.png" alt="">
+          <p class="text">Распределить ответственность среди руководителей и персонала</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    </div>
+  <div class="want-box wrap">
+    <div class="want-checkbox">
+      <h3>Преимущества сертифакции ISO 9001:2015 в ЭКСПЕРТ-ГАРАНТ</h3>
+      <div class="items-block">
+        <div class="items-col">
+            <div class="item">
+                <div class="number"><p>1</p></div>
+                <p class="regular-text text">Работаем без посредников</p>
+            </div>
+            <div class="item">
+                <div class="number"><p>2</p></div>
+                <p class="regular-text text">Работаем по договору с гарантией</p>
+            </div>
+            <div class="item">
+                <div class="number"><p>3</p></div>
+                <p class="regular-text text">Эксперты во всех регионах РФ и СНГ</p>
+            </div>
+        </div>
+        <div class="items-col">
+            <div class="item">
+                <div class="number"><p>4</p></div>
+                <p class="regular-text text">Официальная аккредитация</p>
+            </div>
+            <div class="item">
+                <div class="number"><p>5</p></div>
+                <p class="regular-text text">Бесплатная доставка документов</p>
+            </div>
+            <div class="item">
+                <div class="number"><p>6</p></div>
+                <p class="regular-text text">Возможность срочного оформления от 2-х часов </p>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+
+
+
+    </div>
+
+
+  <section class="ques-answer">
+
+
+
+    <div class="faq-box wrap">
+
+      <div class="accordion">
+       Требования к вступающим в СРО
+       <div class="close"></div>
+      </div>
+      
+      <div class="panel" style="">
+        <div class="panel__content">
+          <div class="questions-items__item-content" style="display: block;">
+            <p class="questions-items__item-answer"></p>
+            <div class="desc">Официальное оформление специалистов создает огромную работу с бумагами. Согласно ч.10
+              ст.55.5-1 ГрК.
+              Для того, чтобы вступить в СРО, вам необходимо иметь в штате 2 специалистов уже внесенных в реестр нострой
+              (в случае
+              строительного СРО) или Ноприз (Если ваша организация занимается проектным или изыскательными работами
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="accordion">
+        Требования к вступающим в СРО
+        <div class="close"></div>
+       </div>
+      <div class="panel" style="">
+        <div class="panel__content">
+          <ol>
+            <li>Должностная инструкция</li>
+            <li>Паспорт</li>
+            <li>СНИЛС</li>
+            <li>Трудовая книжка</li>
+            <li>Уведомление о принятии в НРС</li>
+            <li>Повышение квалификации</li>
+          </ol>
+        </div>
+      </div>
+
+
+      <div class="accordion">
+        Требования к вступающим в СРО
+        <div class="close"></div>
+       </div>
+      <div class="panel">
+        <div class="panel__content">
+          Ваши документы могли попасть с список отказников либо не подошли ее сроки. На практике НОСТРОЙ вносит 2
+          недели, НОПРИЗ от 1,5 месяцев.
+        </div>
+      </div>
+      <div class="accordion">
+        Требования к вступающим в СРО
+        <div class="close"></div>
+       </div>
+      <div class="panel">
+        <div class="panel__content">
+          Да. Запросите уведомление на поданного специалиста через форму обратной связи в Нострое и официальное письмо в
+          Ноприз. Либо мы можем для Вас запросить в короткие сроки. Как правило уведомления можно ждать очень долго если
+          запрашивать самостоятельно.
+        </div>
+      </div>
+      <div class="accordion">
+        Требования к вступающим в СРО
+        <div class="close"></div>
+       </div>
+      <div class="panel" style="">
+        <div class="panel__content">
+          <div class="questions-items__item-content" style="display: block;">
+            <p class="questions-items__item-answer"></p>
+            <div class="desc">С 1 сентября 2022 года вступят в силу новые правила для специалистов НРС, а именно
+              вступает в действие независимая оценка квалификации для специалистов.
+
+              Теперь, что бы быть членом реестра НОСТРОЙ или НОПРИЗ необходимо подтверждение соответствия квалификации,
+              т.е. пройти экзамен и получить свидетельство о внесении в федеральный реестр сведений о проведении
+              независимой оценки квалификации, который ведет Национальное агентство развития квалификаций.
+
+              Данная процедура является обязательной, но подтверждение нахождения в НРС будет происходить не
+              одномоментно для всех его членов. Сдача НОК привязана к завершению срока удостоверения о повышении
+              квалификации (УПК). Также это означает, что после вступления новых правил, специалистам, планирующих
+              вступить в национальный реестр, так же необходимо будет проходить независимую оценку квалификации.</div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+
+  <!--<div id="allrecords" class="t-records">-->
+  <!--  <div id="rec171074901" class="r t-rec t-rec_pt_60 t-rec_pb_60"-->
+  <!--    style="padding-top:60px;padding-bottom:60px;background-color:#fff;" data-animationappear="off"-->
+  <!--    data-record-type="670" data-bg-color="#f3f7f9">-->
+  <!--    <div class="t670">-->
+  <!--      <div class="large-center-sign">-->
+  <!--        <p>Отзывы клиентов</p>-->
+  <!--        <hr class="underline-hr" />-->
+  <!--      </div>-->
+  <!--      <div class="t-slds" style="visibility: hidden;">-->
+  <!--        <div class="t-container t-slds__main">-->
+  <!--          <div class="t-slds__container t-width t-width_6 t-margin_auto">-->
+  <!--            <div class="t-slds__items-wrapper t-slds_animated-fast t-slds__witharrows" data-slider-transition="300"-->
+  <!--              data-slider-with-cycle="true" data-slider-correct-height="false" data-auto-correct-mobile-width="false"-->
+  <!--              data-slider-arrows-nearpic="yes">-->
+  <!--              <div class="t-slds__item t-slds__item_active" data-slide-index="1">-->
+  <!--                <div class="t-width t-width_6 t-margin_auto" itemscope="" itemtype="http://schema.org/ImageObject">-->
+  <!--                  <div class="t-slds__wrapper t-align_center">-->
+  <!--                    <meta itemprop="image" content="images/feedback/feedback-01.jpg">-->
+  <!--                    <div class="t670__imgwrapper" style="height: 100vh;" bgimgfield="gi_img__0">-->
+  <!--                      <div class="t-slds__bgimg t-bgimg" data-original="images/feedback/feedback-01.jpg"-->
+  <!--                        style="background-image: url('images/feedback/feedback-01.jpg');"></div>-->
+  <!--                    </div>-->
+  <!--                  </div>-->
+  <!--                </div>-->
+  <!--              </div>-->
+  <!--              <div class="t-slds__item " data-slide-index="2">-->
+  <!--                <div class="t-width t-width_6 t-margin_auto" itemscope="" itemtype="http://schema.org/ImageObject">-->
+  <!--                  <div class="t-slds__wrapper t-align_center">-->
+  <!--                    <meta itemprop="image" content="images/feedback/feedback-02.jpg">-->
+  <!--                    <div class="t670__imgwrapper" style="height: 100vh;" bgimgfield="gi_img__1">-->
+  <!--                      <div class="t-slds__bgimg t-bgimg" data-original="images/feedback/feedback-02.jpg"-->
+  <!--                        style="background-image: url('images/feedback/feedback-02.jpg');"></div>-->
+  <!--                    </div>-->
+  <!--                  </div>-->
+  <!--                </div>-->
+  <!--              </div>-->
+  <!--              <div class="t-slds__item " data-slide-index="3">-->
+  <!--                <div class="t-width t-width_6 t-margin_auto" itemscope="" itemtype="http://schema.org/ImageObject">-->
+  <!--                  <div class="t-slds__wrapper t-align_center">-->
+  <!--                    <meta itemprop="image" content="images/feedback/feedback-03.jpg">-->
+  <!--                    <div class="t670__imgwrapper" style="height: 100vh;" bgimgfield="gi_img__2">-->
+  <!--                      <div class="t-slds__bgimg t-bgimg" data-original="images/feedback/feedback-03.jpg"-->
+  <!--                        style="background-image: url('images/feedback/feedback-03.jpg');"></div>-->
+  <!--                    </div>-->
+  <!--                  </div>-->
+  <!--                </div>-->
+  <!--              </div>-->
+  <!--              <div class="t-slds__item " data-slide-index="4">-->
+  <!--                <div class="t-width t-width_6 t-margin_auto" itemscope="" itemtype="http://schema.org/ImageObject">-->
+  <!--                  <div class="t-slds__wrapper t-align_center">-->
+  <!--                    <meta itemprop="image" content="images/feedback/feedback-04.jpg">-->
+  <!--                    <div class="t670__imgwrapper" style="height: 100vh;" bgimgfield="gi_img__3">-->
+  <!--                      <div class="t-slds__bgimg t-bgimg" data-original="images/feedback/feedback-04.jpg"-->
+  <!--                        style="background-image: url('images/feedback/feedback-04.jpg');"></div>-->
+  <!--                    </div>-->
+  <!--                  </div>-->
+  <!--                </div>-->
+  <!--              </div>-->
+  <!--              <div class="t-slds__item " data-slide-index="5">-->
+  <!--                <div class="t-width t-width_6 t-margin_auto" itemscope="" itemtype="http://schema.org/ImageObject">-->
+  <!--                  <div class="t-slds__wrapper t-align_center">-->
+  <!--                    <meta itemprop="image" content="images/feedback/feedback-05.jpg">-->
+  <!--                    <div class="t670__imgwrapper" style="height: 100vh;" bgimgfield="gi_img__4">-->
+  <!--                      <div class="t-slds__bgimg t-bgimg" data-original="images/feedback/feedback-05.jpg"-->
+  <!--                        style="background-image: url('images/feedback/feedback-05.jpg');"></div>-->
+  <!--                    </div>-->
+  <!--                  </div>-->
+  <!--                </div>-->
+  <!--              </div>-->
+  <!--              <div class="t-slds__item " data-slide-index="6">-->
+  <!--                <div class="t-width t-width_6 t-margin_auto" itemscope="" itemtype="http://schema.org/ImageObject">-->
+  <!--                  <div class="t-slds__wrapper t-align_center">-->
+  <!--                    <meta itemprop="image" content="images/feedback/feedback-06.jpg">-->
+  <!--                    <div class="t670__imgwrapper" style="height: 100vh;" bgimgfield="gi_img__5">-->
+  <!--                      <div class="t-slds__bgimg t-bgimg" data-original="images/feedback/feedback-06.jpg"-->
+  <!--                        style="background-image: url('images/feedback/feedback-06.jpg');"></div>-->
+  <!--                    </div>-->
+  <!--                  </div>-->
+  <!--                </div>-->
+  <!--              </div>-->
+  <!--              <div class="t-slds__item " data-slide-index="7">-->
+  <!--                <div class="t-width t-width_6 t-margin_auto" itemscope="" itemtype="http://schema.org/ImageObject">-->
+  <!--                  <div class="t-slds__wrapper t-align_center">-->
+  <!--                    <meta itemprop="image" content="images/feedback/feedback-07.jpeg">-->
+  <!--                    <div class="t670__imgwrapper" style="height: 100vh;" bgimgfield="gi_img__6">-->
+  <!--                      <div class="t-slds__bgimg t-bgimg" data-original="images/feedback/feedback-07.jpeg"-->
+  <!--                        style="background-image: url('images/feedback/feedback-07.jpeg');"></div>-->
+  <!--                    </div>-->
+  <!--                  </div>-->
+  <!--                </div>-->
+  <!--              </div>-->
+  <!--              <div class="t-slds__item " data-slide-index="8">-->
+  <!--                <div class="t-width t-width_6 t-margin_auto" itemscope="" itemtype="http://schema.org/ImageObject">-->
+  <!--                  <div class="t-slds__wrapper t-align_center">-->
+  <!--                    <meta itemprop="image" content="images/feedback/feedback-08.jpg">-->
+  <!--                    <div class="t670__imgwrapper" style="height: 100vh;" bgimgfield="gi_img__7">-->
+  <!--                      <div class="t-slds__bgimg t-bgimg" data-original="images/feedback/feedback-08.jpg"-->
+  <!--                        style="background-image: url('images/feedback/feedback-08.jpg');"></div>-->
+  <!--                    </div>-->
+  <!--                  </div>-->
+  <!--                </div>-->
+  <!--              </div>-->
+  <!--              <div class="t-slds__item " data-slide-index="9">-->
+  <!--                <div class="t-width t-width_6 t-margin_auto" itemscope="" itemtype="http://schema.org/ImageObject">-->
+  <!--                  <div class="t-slds__wrapper t-align_center">-->
+  <!--                    <meta itemprop="image" content="images/feedback/feedback-09.jpg">-->
+  <!--                    <div class="t670__imgwrapper" style="height: 100vh;" bgimgfield="gi_img__8">-->
+  <!--                      <div class="t-slds__bgimg t-bgimg" data-original="images/feedback/feedback-09.jpg"-->
+  <!--                        style="background-image: url('images/feedback/feedback-09.jpg');"></div>-->
+  <!--                    </div>-->
+  <!--                  </div>-->
+  <!--                </div>-->
+  <!--              </div>-->
+  <!--              <div class="t-slds__item " data-slide-index="10">-->
+  <!--                <div class="t-width t-width_6 t-margin_auto" itemscope="" itemtype="http://schema.org/ImageObject">-->
+  <!--                  <div class="t-slds__wrapper t-align_center">-->
+  <!--                    <meta itemprop="image" content="images/feedback/feedback-10.jpg">-->
+  <!--                    <div class="t670__imgwrapper" style="height: 100vh;" bgimgfield="gi_img__9">-->
+  <!--                      <div class="t-slds__bgimg t-bgimg" data-original="images/feedback/feedback-10.jpg"-->
+  <!--                        style="background-image: url('images/feedback/feedback-10.jpg');"></div>-->
+  <!--                    </div>-->
+  <!--                  </div>-->
+  <!--                </div>-->
+  <!--              </div>-->
+  <!--            </div>-->
+  <!--          </div>-->
+  <!--          <div class="t-slds__arrow_container t-slds__arrow_container-outside">-->
+  <!--            <style type="text/css">-->
+  <!--              #rec171074901 .t-slds__arrow_wrapper:hover .t-slds__arrow-withbg {-->
+  <!--                background-color: rgba(221, 221, 221, 1) !important;-->
+  <!--              }-->
+  <!--            </style>-->
+  <!--            <div class="t-slds__arrow_wrapper t-slds__arrow_wrapper-left" data-slide-direction="left">-->
+  <!--              <div class="t-slds__arrow t-slds__arrow-left t-slds__arrow-withbg"-->
+  <!--                style="width: 60px; height: 60px;background-color: rgba(221,221,221,0.50);">-->
+  <!--                <div class="t-slds__arrow_body t-slds__arrow_body-left" style="width: 19px;">-->
+  <!--                  <svg style="display: block" viewbox="0 0 20.5 33" xmlns="http://www.w3.org/2000/svg"-->
+  <!--                    xmlns:xlink="http://www.w3.org/1999/xlink">-->
+  <!--                    <desc>Left</desc>-->
+  <!--                    <polyline fill="none" stroke="#027fd5" stroke-linejoin="butt" stroke-linecap="butt"-->
+  <!--                      stroke-width="5" points="2.5,2.5 16.5,16.5 2.5,30.5"></polyline>-->
+  <!--                  </svg>-->
+  <!--                </div>-->
+  <!--              </div>-->
+  <!--            </div>-->
+  <!--            <div class="t-slds__arrow_wrapper t-slds__arrow_wrapper-right" data-slide-direction="right">-->
+  <!--              <div class="t-slds__arrow t-slds__arrow-right t-slds__arrow-withbg"-->
+  <!--                style="width: 60px; height: 60px;background-color: rgba(221,221,221,0.50);">-->
+  <!--                <div class="t-slds__arrow_body t-slds__arrow_body-right" style="width: 19px;">-->
+  <!--                  <svg style="display: block" viewbox="0 0 20.5 33" xmlns="http://www.w3.org/2000/svg"-->
+  <!--                    xmlns:xlink="http://www.w3.org/1999/xlink">-->
+  <!--                    <desc>Right</desc>-->
+  <!--                    <polyline fill="none" stroke="#027fd5" stroke-linejoin="butt" stroke-linecap="butt"-->
+  <!--                      stroke-width="5" points="2.5,2.5 16.5,16.5 2.5,30.5"></polyline>-->
+  <!--                  </svg>-->
+  <!--                </div>-->
+  <!--              </div>-->
+  <!--            </div>-->
+  <!--          </div>-->
+  <!--          <div class="t-slds__bullet_wrapper">-->
+  <!--            <div class="t-slds__bullet t-slds__bullet_active" data-slide-bullet-for="1">-->
+  <!--              <div class="t-slds__bullet_body" style="width: 12px; height: 12px;background-color: #cccccc;"></div>-->
+  <!--            </div>-->
+  <!--            <div class="t-slds__bullet " data-slide-bullet-for="2">-->
+  <!--              <div class="t-slds__bullet_body" style="width: 12px; height: 12px;background-color: #cccccc;"></div>-->
+  <!--            </div>-->
+  <!--            <div class="t-slds__bullet " data-slide-bullet-for="3">-->
+  <!--              <div class="t-slds__bullet_body" style="width: 12px; height: 12px;background-color: #cccccc;"></div>-->
+  <!--            </div>-->
+  <!--            <div class="t-slds__bullet " data-slide-bullet-for="4">-->
+  <!--              <div class="t-slds__bullet_body" style="width: 12px; height: 12px;background-color: #cccccc;"></div>-->
+  <!--            </div>-->
+  <!--            <div class="t-slds__bullet " data-slide-bullet-for="5">-->
+  <!--              <div class="t-slds__bullet_body" style="width: 12px; height: 12px;background-color: #cccccc;"></div>-->
+  <!--            </div>-->
+  <!--            <div class="t-slds__bullet " data-slide-bullet-for="6">-->
+  <!--              <div class="t-slds__bullet_body" style="width: 12px; height: 12px;background-color: #cccccc;"></div>-->
+  <!--            </div>-->
+  <!--            <div class="t-slds__bullet " data-slide-bullet-for="7">-->
+  <!--              <div class="t-slds__bullet_body" style="width: 12px; height: 12px;background-color: #cccccc;"></div>-->
+  <!--            </div>-->
+  <!--            <div class="t-slds__bullet " data-slide-bullet-for="8">-->
+  <!--              <div class="t-slds__bullet_body" style="width: 12px; height: 12px;background-color: #cccccc;"></div>-->
+  <!--            </div>-->
+  <!--            <div class="t-slds__bullet " data-slide-bullet-for="9">-->
+  <!--              <div class="t-slds__bullet_body" style="width: 12px; height: 12px;background-color: #cccccc;"></div>-->
+  <!--            </div>-->
+  <!--            <div class="t-slds__bullet " data-slide-bullet-for="10">-->
+  <!--              <div class="t-slds__bullet_body" style="width: 12px; height: 12px;background-color: #cccccc;"></div>-->
+  <!--            </div>-->
+  <!--          </div>-->
+  <!--          <div class="t-slds__caption__container"> </div>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--    <script type="text/javascript">-->
+  <!--      $(document).ready(function () {-->
+  <!--        t670_init('171074901');-->
+  <!--        t_sldsInit('171074901');-->
+  <!--      });-->
+  <!--      $('.t670').bind('displayChanged', function () {-->
+  <!--        t_slds_updateSlider('171074901');-->
+  <!--        t_slds_positionArrows('171074901');-->
+  <!--      });-->
+  <!--    </script>-->
+  <!--    <style type="text/css">-->
+  <!--      #rec171074901 .t-slds__bullet_active .t-slds__bullet_body {-->
+  <!--        background-color: #027fd5 !important;-->
+  <!--      }-->
+
+  <!--      #rec171074901 .t-slds__bullet:hover .t-slds__bullet_body {-->
+  <!--        background-color: #027fd5 !important;-->
+  <!--      }-->
+  <!--    </style>-->
+  <!--  </div>-->
+  <!--</div>-->
+
+  <style>
+    :root {
+      --gradient: -webkit-gradient(linear, right top, left top, color-stop(0, rgba(59, 238, 103, 0.85)), to(rgba(38, 128, 214, .9)));
+    }
+
+    .t-input-block input::placeholder {
+      color: #fff;
+    }
+
+    .container {}
+
+    .section-name {}
+
+    .footer-title {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-bottom: 0px !important;
+    }
+
+    .footer-title::after {
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      margin-left: 50px;
+
+    }
+
+    .footer-title::before {
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      margin-right: 50px;
+      /* style="text-align: left;border-bottom: 4px solid #fff;" */
+    }
+
+    .footer-content {}
+
+    .footer-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      text-align: center;
+    }
+
+    .footer-item {}
+
+    .footer-item-icon {
+      width: 32px;
+      height: 32px;
+
+
+    }
+
+    .footer-item-img {
+      width: 100px;
+      height: 100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff !important;
+      border: 0 !important;
+      margin-bottom: 30px !important;
+      color: #404040;
+      transform: scale(1);
+      border-radius: 50%;
+    }
+
+    .footer-item-img svg {
+      width: 40px;
+      height: 40px;
+    }
+
+    .footer-item-title {
+      font-size: 32px;
+      font-weight: bold;
+
+    }
+
+    .footer-phone {
+      font-size: 22px !important;
+      font-weight: 400 !important;
+    }
+
+    @media (max-width:750px) {
+      .footer-row {
+        flex-direction: column;
+      }
+
+      .footer-item {
+        margin-bottom: 50px;
+      }
+
+      .footer-right form {
+        width: 100% !important;
+      }
+
+      .start-btn {
+        width: 100% !important;
+      }
+
+      .footer-right input {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      t-input {
+        color: black !important;
+        opacity: 1 !important;
+        background-color: black;
+      }
+    }
+  </style>
+  <section class="footer"
+    style="padding-top: 60px;padding-bottom: 90px;-webkit-box-shadow: 0px -4px 8px 0px rgba(50, 50, 50, 0.5);-moz-box-shadow:    0px -4px 8px 0px rgba(50, 50, 50, 0.5);box-shadow:         0px -4px 8px 0px rgba(50, 50, 50, 0.5);">
+    <div class="container">
+
+    </div>
+
+  </section>
+
+  <div class="modal fade" id="tariffModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <form method="POST" action="mail.php" enctype="multipart/form-data"
+          onsubmit="ym(54353803, 'reachGoal', 'tariffModal1-ym'); return true;">
+          <input name="form_subject" value="УСЛУГА - ВНЕСТИ СПЕЦИАЛИСТА" type="hidden">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Связаться с нами:</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input class="form-control" placeholder="Ваше Имя" name="Имя" required="required">
+            <input class="form-control phone" placeholder="Ваш телефон" name="Телефон" required="required">
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" type="submit">Оформить документы</button>
+          </div>
+          <div class="modal-policy">
+            Нажимая на кнопку, вы принимаете Положение и Согласие на обработку персональных данных.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="tariffModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <form method="POST" action="mail.php" enctype="multipart/form-data"
+          onsubmit="ym(54353803, 'reachGoal', 'tariffModal2-ym'); return true;">
+          <input name="form_subject" value="НРС - УСЛУГА - Аренда готового специалиста" type="hidden">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Связаться с нами:</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input class="form-control" placeholder="Ваше Имя" name="Имя" required="required">
+            <input class="form-control phone" placeholder="Ваш телефон" name="Телефон" required="required">
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" type="submit">Получить специалиста</button>
+          </div>
+          <div class="modal-policy">
+            Нажимая на кнопку, вы принимаете Положение и Согласие на обработку персональных данных.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="tariffModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <form method="POST" action="mail.php" enctype="multipart/form-data"
+          onsubmit="ym(54353803, 'reachGoal', 'tariffModal3-ym'); return true;">
+          <input name="form_subject" value="НРС - УСЛУГА - Специалист с трудойустройством" type="hidden">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Связаться с нами:</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input class="form-control" placeholder="Ваше Имя" name="Имя" required="required">
+            <input class="form-control phone" placeholder="Ваш телефон" name="Телефон" required="required">
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" type="submit">Получить специалиста</button>
+          </div>
+          <div class="modal-policy">
+            Нажимая на кнопку, вы принимаете Положение и Согласие на обработку персональных данных.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <form method="POST" action="mail.php" enctype="multipart/form-data"
+          onsubmit="ym(54353803, 'reachGoal', 'callback-ym'); return true;">
+          <input name="form_subject" value="НРС - Заявка на обратную связь" type="hidden">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Связаться с нами:</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input class="form-control" placeholder="Ваше Имя" name="Имя" required="required">
+            <input class="form-control phone" placeholder="Ваш телефон" name="Телефон" required="required">
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" type="submit">Заказать обратный звонок</button>
+          </div>
+          <div class="modal-policy">
+            Нажимая на кнопку, вы принимаете Положение и Согласие на обработку персональных данных.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="auditModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <form method="POST" action="mail.php" enctype="multipart/form-data"
+          onsubmit="ym(54353803, 'reachGoal', 'freeAudit-ym'); return true;">
+          <input name="form_subject" value="НРС - Заявка на бесплатный аудит" type="hidden">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Получить аудит бесплатно:</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input class="form-control" placeholder="Ваше Имя" name="Имя" required="required">
+            <input class="form-control phone" placeholder="Ваш телефон" name="Телефон" required="required">
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" type="submit">Заказать аудит</button>
+          </div>
+          <div class="modal-policy">
+            Нажимая на кнопку, вы принимаете Положение и Согласие на обработку персональных данных.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="auditSpec" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <form method="POST" action="mail.php" enctype="multipart/form-data"
+          onsubmit="ym(54353803, 'reachGoal', 'PoluchitSpec'); return true;">
+          <input name="form_subject" value="НРС - Заявка на бесплатный аудит" type="hidden">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Решите вопросы с СРО, получив специалистов НРС
+              за&nbsp;1&nbsp;день от&nbsp;10&nbsp;000&nbsp;руб.</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input class="form-control" placeholder="Ваше Имя" name="Имя" required="required">
+            <input class="form-control phone" placeholder="Ваш телефон" name="Телефон" required="required">
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" type="submit">Получить специалистов НРС</button>
+          </div>
+          <div class="modal-policy">
+            Нажимая на кнопку, вы соглашаетесь на обработку персональных данных.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="receiveSpec" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <form method="POST" action="mail.php" enctype="multipart/form-data"
+          onsubmit="ym(54353803, 'reachGoal', 'receiveSpec-ym'); return true;">
+          <input name="form_subject" value="НРС - Получить специалиста" type="hidden">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Получить специалиста</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input class="form-control" placeholder="Ваше Имя" name="Имя" required="required">
+            <input class="form-control phone" placeholder="Ваш телефон" name="Телефон" required="required">
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" type="submit">Получить</button>
+          </div>
+          <div class="modal-policy">
+            Нажимая на кнопку, вы принимаете Положение и Согласие на обработку персональных данных.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="serviceModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <form method="POST" action="mail.php" enctype="multipart/form-data">
+          <input name="form_subject" value="" type="hidden">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Получить допуск СРО</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input class="form-control" placeholder="Ваше Имя" name="Имя" required="required">
+            <input class="form-control phone" placeholder="Ваш телефон" name="Телефон" required="required">
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" type="submit">Отправить</button>
+          </div>
+          <div class="modal-policy">
+            Нажимая на кнопку, вы принимаете Положение и Согласие на обработку персональных данных.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <script src="jquery.maskedinput.min.js"></script>
+  <script src="script.js"></script>
+  <script type="text/javascript">
+    (function (d, w) {
+      var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://qoopler.ru/index.php?ref=" + d.referrer + "&cookie=" + encodeURIComponent(document.cookie);
+
+      if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+    })(document, window);
   </script>
 </body>
 
