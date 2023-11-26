@@ -241,16 +241,3 @@ ul, li {
   text-decoration: none;
   list-style: none;
 }
-.want-box {
-  position: relative;
-}
-.want-box-decor::after {
-  position: absolute;
-  content: '';
-  display: block;
-  width: 200px;
-  height: 200px;
-  background-image: url('../images/svg/Vector9.svg');
-
-  background-size: contain;
-}
