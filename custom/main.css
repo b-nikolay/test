@@ -72,6 +72,7 @@ body {
   margin-bottom: 50px;
 }
 .want-items {
+  display: flex;
 }
 .item {
   display: flex;
@@ -122,27 +123,31 @@ body {
 }
 .text {
 }
-.footer {
+/* .footer {
   display: none;
-}
+} */
 
 .form-footer, .form-header, .form-body {
   font-size: 18px;
 }
 .form-main {
   display: flex;
-  width: 500px;
-  align-items: center;
-  margin-top: 100px;
+  width: 230px;
 }
+
 .form-footer {
   border: none;
-  border-radius: 50px;
+  border-radius: 10px !important;
   
 }
 .form-body .form-control {
-  border-radius: 50px;
+  border-radius: 10px !important;
+  font-size: 16px;
   border: none;
+  margin-bottom: 20px;
+}
+.form-body .form-control::placeholder {
+  font-size: 14px;
 }
 .large-sign {
   display: flex;
@@ -164,18 +169,21 @@ body {
 }
 .large-form {
   
-  flex: 1 1 70%;
+  flex: 0 1 33%;
 }
 .form-footer button{
   border: none;background: #9fd4ff;
-  color: #000;
+  color: #fff;
   padding: 8px .95rem;
   border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
   margin-left: 30px;
 }
 .form-body input {
   border: none;
 }
+
 
 @media (max-width:700px) {
   .items-block {

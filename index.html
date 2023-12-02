@@ -9,12 +9,18 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <title>Специалисты НРС для СРО в аренду. Реальные люди, официальное трудоустройство.</title>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
   <meta name="description"
     content="Предоставим в аренду специалистов, уже включенных в НРС (реестры НОСТРОЙ или НОПРИЗ) в течение 1 дня. Вся Россия. Официально по требованию 372-ФЗ." />
   <link rel="stylesheet" type="text/css" href="style.css">
+
   <link rel="shortcut icon" href="images/favico.ico" type="image/x-icon">
   <link rel="stylesheet" href="custom/grid.min.css">
   <link rel="stylesheet" href="custom/main.css">
+  <link rel="stylesheet" href="custom/wow.css">
   <script src="custom/jquery-1.10.2.min.js" charset="utf-8"></script>
   <script src="custom/main.js" charset="utf-8"></script>
   <!-- Google Tag Manager -->
@@ -55,18 +61,21 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a data-scroll class="nav-link" href="#first-card">Почему нам доверяют <span
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item  wow slideInDown "   data-wow-duration="300ms">
+              <a data-scroll class="nav-link" href="#">Виды сертификатов <span
                   class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-              <a data-scroll class="nav-link" href="#requirements">Требования по реестру НРС</a>
+            <li class="nav-item  wow slideInDown "  data-wow-duration="400ms">
+              <a data-scroll class="nav-link" href="#">Стоимость</a>
             </li>
-            <li class="nav-item">
-              <a data-scroll class="nav-link" href="#tariffs">Тарифы</a>
+            <li class="nav-item wow slideInDown "  data-wow-duration="500ms">
+              <a data-scroll class="nav-link" href="#">Калькулятор</a>
             </li>
-          </ul> -->
+            <li class="nav-item wow slideInDown "  data-wow-duration="600ms">
+              <a data-scroll class="nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
           <a class="phone-number" href="tel:+74992816962" class="zphone_nrs"><img src="images/phone-call.png" alt="">7
             (499) 281-69-62
             <span style="font-size: 9px;display: block;padding-left: 22px;">звонок по России бесплатный
@@ -74,8 +83,8 @@
           <!--<button type="button" class="count-button" data-toggle="modal" data-target="#messageModal" id="hidden-count-button">Заказать обратный звонок</button>-->
         </div>
       </nav>
-      <a href="https://wa.me/+79116235367" class="count-button  button_color_theme"
-        style="background: #9fd4ff;color: #000 !important;" target="_self">Связаться с нами в WhatsApp</a>
+      <!-- <a href="https://wa.me/+79116235367" class="count-button  button_color_theme"
+        style="background: #9fd4ff;color: #000 !important;" target="_self">Связаться с нами в WhatsApp</a> -->
 
       <!--<button type="button" class="count-button" data-toggle="modal" data-target="#messageModal" id="visible-count-button">Заказать обратный звонок</button>-->
     </div>
@@ -88,20 +97,23 @@
               <li>Минимальный пакет документов</li>
               <li>Получение скан полюса за 1 час</li>
             </ul>
-            <form class="form-main" method="POST" action="mail.php" enctype="multipart/form-data"">
-            <input name="form_subject" value="Бесплатная консультация" type="hidden">
-           
-            <div class="form-body">
-              <input class="form-control phone" placeholder="Введите номер телефона*" name="Телефон" required="required">
-           
-            </div>
-            <div class="form-footer">
-              <button class="count-button" type="submit">Бесплатная консультация</button>
-            </div>
-          </form>
+        
           </div>
           
       <img src="images/test.png" class="large-img" alt="">
+      <form class="form-main" method="POST" action="mail.php" enctype="multipart/form-data" style="flex-direction: column;">
+        <span style="font-size: 18px;text-align: center;margin-bottom: 20px;">Оставьте заявку и получите бесплатную консультацию!</span>
+        <input name="form_subject" value="Бесплатная консультация" type="hidden">
+       
+        <div class="form-body" >
+          <input class="form-control " placeholder="Введите имя" name="Имя" required="required">
+          <input class="form-control phone" placeholder="Введите номер телефона*" name="Телефон" required="required">
+       
+        </div>
+        <div class="form-footer">
+          <button class="count-button" style="margin: 0;padding: 8px 0.7rem;font-size: 16px;" type="submit">Бесплатная консультация</button>
+        </div>
+      </form>
       </div>
 
       
@@ -115,50 +127,53 @@
     <div class="want-checkbox wrap">
       <h3>Внедрение СМК и сертификация по ISO 9001:2015 помогает:</h3>
       <div class="want-items">
-        <div class="column">
-          <div class="item">
-            <img src="images/mark.png" alt="">
+        <div class="want-items-col">
+
+          <div class="item wow slideInLeft "  data-wow-duration="1s">
+            <img src="images/mark2.png" style="width:32px;" alt="">
             <p class="text">Повысить качество управления в организации</p>
           </div>
-          <div class="item">
-            <img src="images/mark.png" alt="">
+          <div class="item wow slideInRight "  data-wow-duration="1s">
+            <img src="images/mark2.png" style="width:32px;" alt="">
             <p class="text">Сделать производственные процессы прозрачными для клиентов</p>
           </div>
-          <div class="item">
-            <img src="images/mark.png" alt="">
+          <div class="item wow slideInLeft "  data-wow-duration="1s">
+            <img src="images/mark2.png" style="width:32px;" alt="">
             <p class="text">Повысить эффективность работы компании</p>
           </div>
-          <div class="item">
-            <img src="images/mark.png" alt="">
+          <div class="item wow slideInRight "  data-wow-duration="1s">
+            <img src="images/mark2.png" style="width:32px;" alt="">
             <p class="text">Снизить риски</p>
           </div>
-          <div class="item">
-            <img src="images/mark.png" alt="">
+          <div class="item wow slideInLeft "  data-wow-duration="1s">
+            <img src="images/mark2.png" style="width:32px;" alt="">
             <p class="text">Повысить качество и безопасность готовой продукции</p>
           </div>
+          <div class="item wow slideInRight "  data-wow-duration="1s">
+            <img src="images/mark2.png" style="width:32px;" alt="">
+            <p class="text">Получить уверенность при прохождении проверок и аудитов</p>
+          </div>
         </div>
-        <div class="column">
+      
           
-        <div class="item">
-          <img src="images/mark.png" alt="">
-          <p class="text">Получить уверенность при прохождении проверок и аудитов</p>
-        </div>
-        <div class="item">
-          <img src="images/mark.png" alt="">
-          <p class="text">Повысить статус предприятия</p>
-        </div>
-        <div class="item">
-          <img src="images/mark.png" alt="">
-          <p class="text">Минимизировать количество ошибок и несоответствий, путем их своевременного предупреждения</p>
-        </div>
-        <div class="item">
-          <img src="images/mark.png" alt="">
-          <p class="text">Интегрировать систему менеджмента качества с отраслевыми системами</p>
-        </div>
-        <div class="item">
-          <img src="images/mark.png" alt="">
-          <p class="text">Распределить ответственность среди руководителей и персонала</p>
-        </div>
+        <div class="want-items-col">
+        
+          <div class="item wow slideInLeft "  data-wow-duration="1s">
+            <img src="images/mark2.png" style="width:32px;" alt="">
+            <p class="text">Повысить статус предприятия</p>
+          </div>
+          <div class="item wow slideInRight "  data-wow-duration="1s">
+            <img src="images/mark2.png" style="width:32px;" alt="">
+            <p class="text">Минимизировать количество ошибок и несоответствий, путем их своевременного предупреждения</p>
+          </div>
+          <div class="item wow slideInLeft "  data-wow-duration="1s">
+            <img src="images/mark2.png" style="width:32px;" alt="">
+            <p class="text">Интегрировать систему менеджмента качества с отраслевыми системами</p>
+          </div>
+          <div class="item wow slideInRight "  data-wow-duration="1s">
+            <img src="images/mark2.png" style="width:32px;" alt="">
+            <p class="text">Распределить ответственность среди руководителей и персонала</p>
+          </div>
         </div>
       </div>
     </div>
@@ -171,29 +186,29 @@
       <h3>Преимущества сертифакции ISO 9001:2015 в ЭКСПЕРТ-ГАРАНТ</h3>
       <div class="items-block">
         <div class="items-col">
-            <div class="item">
+            <div class="item wow slideInLeft "  data-wow-duration="1s">
                 <div class="number"><p>1</p></div>
                 <p class="regular-text text">Работаем без посредников</p>
             </div>
-            <div class="item">
+            <div class="item wow slideInRight "  data-wow-duration="1s">
                 <div class="number"><p>2</p></div>
                 <p class="regular-text text">Работаем по договору с гарантией</p>
             </div>
-            <div class="item">
+            <div class="item wow slideInLeft "  data-wow-duration="1s">
                 <div class="number"><p>3</p></div>
                 <p class="regular-text text">Эксперты во всех регионах РФ и СНГ</p>
             </div>
         </div>
         <div class="items-col">
-            <div class="item">
+            <div class="item wow slideInRight "  data-wow-duration="1s">
                 <div class="number"><p>4</p></div>
                 <p class="regular-text text">Официальная аккредитация</p>
             </div>
-            <div class="item">
+            <div class="item wow slideInLeft "  data-wow-duration="1s">
                 <div class="number"><p>5</p></div>
                 <p class="regular-text text">Бесплатная доставка документов</p>
             </div>
-            <div class="item">
+            <div class="item wow slideInRight "  data-wow-duration="1s">
                 <div class="number"><p>6</p></div>
                 <p class="regular-text text">Возможность срочного оформления от 2-х часов </p>
             </div>
@@ -301,226 +316,53 @@
 
 
   </section>
+  <section class="footer" style="">   
+    <div class="container">      
+      <div class="section-name footer-title">Задайте вопрос</div>
+      <div class="footer-content">
+      <div class="footer-right" style="width: 100%; display: flex;
+                      justify-content: center; margin-top: 70px;">
+        <form action="mail.php" method="POST" class="t-form">
+          <input name="form_subject" value="НРС - Заявка (Футер)" type="hidden">
+          <input type="text" name="Ваше Имя" placeholder="Ваше Имя">
+          <input type="text" name="Телефон" placeholder="Ваш телефон">
+          <textarea name="Вопрос" placeholder="Ваш вопрос" id=""  rows="3" class="quest"></textarea>
+          <button type="submit" class="start-btn footer-btn" style="width: 100%;">Оставить заявку</button>
 
-
-
-  <!--<div id="allrecords" class="t-records">-->
-  <!--  <div id="rec171074901" class="r t-rec t-rec_pt_60 t-rec_pb_60"-->
-  <!--    style="padding-top:60px;padding-bottom:60px;background-color:#fff;" data-animationappear="off"-->
-  <!--    data-record-type="670" data-bg-color="#f3f7f9">-->
-  <!--    <div class="t670">-->
-  <!--      <div class="large-center-sign">-->
-  <!--        <p>Отзывы клиентов</p>-->
-  <!--        <hr class="underline-hr" />-->
-  <!--      </div>-->
-  <!--      <div class="t-slds" style="visibility: hidden;">-->
-  <!--        <div class="t-container t-slds__main">-->
-  <!--          <div class="t-slds__container t-width t-width_6 t-margin_auto">-->
-  <!--            <div class="t-slds__items-wrapper t-slds_animated-fast t-slds__witharrows" data-slider-transition="300"-->
-  <!--              data-slider-with-cycle="true" data-slider-correct-height="false" data-auto-correct-mobile-width="false"-->
-  <!--              data-slider-arrows-nearpic="yes">-->
-  <!--              <div class="t-slds__item t-slds__item_active" data-slide-index="1">-->
-  <!--                <div class="t-width t-width_6 t-margin_auto" itemscope="" itemtype="http://schema.org/ImageObject">-->
-  <!--                  <div class="t-slds__wrapper t-align_center">-->
-  <!--                    <meta itemprop="image" content="images/feedback/feedback-01.jpg">-->
-  <!--                    <div class="t670__imgwrapper" style="height: 100vh;" bgimgfield="gi_img__0">-->
-  <!--                      <div class="t-slds__bgimg t-bgimg" data-original="images/feedback/feedback-01.jpg"-->
-  <!--                        style="background-image: url('images/feedback/feedback-01.jpg');"></div>-->
-  <!--                    </div>-->
-  <!--                  </div>-->
-  <!--                </div>-->
-  <!--              </div>-->
-  <!--              <div class="t-slds__item " data-slide-index="2">-->
-  <!--                <div class="t-width t-width_6 t-margin_auto" itemscope="" itemtype="http://schema.org/ImageObject">-->
-  <!--                  <div class="t-slds__wrapper t-align_center">-->
-  <!--                    <meta itemprop="image" content="images/feedback/feedback-02.jpg">-->
-  <!--                    <div class="t670__imgwrapper" style="height: 100vh;" bgimgfield="gi_img__1">-->
-  <!--                      <div class="t-slds__bgimg t-bgimg" data-original="images/feedback/feedback-02.jpg"-->
-  <!--                        style="background-image: url('images/feedback/feedback-02.jpg');"></div>-->
-  <!--                    </div>-->
-  <!--                  </div>-->
-  <!--                </div>-->
-  <!--              </div>-->
-  <!--              <div class="t-slds__item " data-slide-index="3">-->
-  <!--                <div class="t-width t-width_6 t-margin_auto" itemscope="" itemtype="http://schema.org/ImageObject">-->
-  <!--                  <div class="t-slds__wrapper t-align_center">-->
-  <!--                    <meta itemprop="image" content="images/feedback/feedback-03.jpg">-->
-  <!--                    <div class="t670__imgwrapper" style="height: 100vh;" bgimgfield="gi_img__2">-->
-  <!--                      <div class="t-slds__bgimg t-bgimg" data-original="images/feedback/feedback-03.jpg"-->
-  <!--                        style="background-image: url('images/feedback/feedback-03.jpg');"></div>-->
-  <!--                    </div>-->
-  <!--                  </div>-->
-  <!--                </div>-->
-  <!--              </div>-->
-  <!--              <div class="t-slds__item " data-slide-index="4">-->
-  <!--                <div class="t-width t-width_6 t-margin_auto" itemscope="" itemtype="http://schema.org/ImageObject">-->
-  <!--                  <div class="t-slds__wrapper t-align_center">-->
-  <!--                    <meta itemprop="image" content="images/feedback/feedback-04.jpg">-->
-  <!--                    <div class="t670__imgwrapper" style="height: 100vh;" bgimgfield="gi_img__3">-->
-  <!--                      <div class="t-slds__bgimg t-bgimg" data-original="images/feedback/feedback-04.jpg"-->
-  <!--                        style="background-image: url('images/feedback/feedback-04.jpg');"></div>-->
-  <!--                    </div>-->
-  <!--                  </div>-->
-  <!--                </div>-->
-  <!--              </div>-->
-  <!--              <div class="t-slds__item " data-slide-index="5">-->
-  <!--                <div class="t-width t-width_6 t-margin_auto" itemscope="" itemtype="http://schema.org/ImageObject">-->
-  <!--                  <div class="t-slds__wrapper t-align_center">-->
-  <!--                    <meta itemprop="image" content="images/feedback/feedback-05.jpg">-->
-  <!--                    <div class="t670__imgwrapper" style="height: 100vh;" bgimgfield="gi_img__4">-->
-  <!--                      <div class="t-slds__bgimg t-bgimg" data-original="images/feedback/feedback-05.jpg"-->
-  <!--                        style="background-image: url('images/feedback/feedback-05.jpg');"></div>-->
-  <!--                    </div>-->
-  <!--                  </div>-->
-  <!--                </div>-->
-  <!--              </div>-->
-  <!--              <div class="t-slds__item " data-slide-index="6">-->
-  <!--                <div class="t-width t-width_6 t-margin_auto" itemscope="" itemtype="http://schema.org/ImageObject">-->
-  <!--                  <div class="t-slds__wrapper t-align_center">-->
-  <!--                    <meta itemprop="image" content="images/feedback/feedback-06.jpg">-->
-  <!--                    <div class="t670__imgwrapper" style="height: 100vh;" bgimgfield="gi_img__5">-->
-  <!--                      <div class="t-slds__bgimg t-bgimg" data-original="images/feedback/feedback-06.jpg"-->
-  <!--                        style="background-image: url('images/feedback/feedback-06.jpg');"></div>-->
-  <!--                    </div>-->
-  <!--                  </div>-->
-  <!--                </div>-->
-  <!--              </div>-->
-  <!--              <div class="t-slds__item " data-slide-index="7">-->
-  <!--                <div class="t-width t-width_6 t-margin_auto" itemscope="" itemtype="http://schema.org/ImageObject">-->
-  <!--                  <div class="t-slds__wrapper t-align_center">-->
-  <!--                    <meta itemprop="image" content="images/feedback/feedback-07.jpeg">-->
-  <!--                    <div class="t670__imgwrapper" style="height: 100vh;" bgimgfield="gi_img__6">-->
-  <!--                      <div class="t-slds__bgimg t-bgimg" data-original="images/feedback/feedback-07.jpeg"-->
-  <!--                        style="background-image: url('images/feedback/feedback-07.jpeg');"></div>-->
-  <!--                    </div>-->
-  <!--                  </div>-->
-  <!--                </div>-->
-  <!--              </div>-->
-  <!--              <div class="t-slds__item " data-slide-index="8">-->
-  <!--                <div class="t-width t-width_6 t-margin_auto" itemscope="" itemtype="http://schema.org/ImageObject">-->
-  <!--                  <div class="t-slds__wrapper t-align_center">-->
-  <!--                    <meta itemprop="image" content="images/feedback/feedback-08.jpg">-->
-  <!--                    <div class="t670__imgwrapper" style="height: 100vh;" bgimgfield="gi_img__7">-->
-  <!--                      <div class="t-slds__bgimg t-bgimg" data-original="images/feedback/feedback-08.jpg"-->
-  <!--                        style="background-image: url('images/feedback/feedback-08.jpg');"></div>-->
-  <!--                    </div>-->
-  <!--                  </div>-->
-  <!--                </div>-->
-  <!--              </div>-->
-  <!--              <div class="t-slds__item " data-slide-index="9">-->
-  <!--                <div class="t-width t-width_6 t-margin_auto" itemscope="" itemtype="http://schema.org/ImageObject">-->
-  <!--                  <div class="t-slds__wrapper t-align_center">-->
-  <!--                    <meta itemprop="image" content="images/feedback/feedback-09.jpg">-->
-  <!--                    <div class="t670__imgwrapper" style="height: 100vh;" bgimgfield="gi_img__8">-->
-  <!--                      <div class="t-slds__bgimg t-bgimg" data-original="images/feedback/feedback-09.jpg"-->
-  <!--                        style="background-image: url('images/feedback/feedback-09.jpg');"></div>-->
-  <!--                    </div>-->
-  <!--                  </div>-->
-  <!--                </div>-->
-  <!--              </div>-->
-  <!--              <div class="t-slds__item " data-slide-index="10">-->
-  <!--                <div class="t-width t-width_6 t-margin_auto" itemscope="" itemtype="http://schema.org/ImageObject">-->
-  <!--                  <div class="t-slds__wrapper t-align_center">-->
-  <!--                    <meta itemprop="image" content="images/feedback/feedback-10.jpg">-->
-  <!--                    <div class="t670__imgwrapper" style="height: 100vh;" bgimgfield="gi_img__9">-->
-  <!--                      <div class="t-slds__bgimg t-bgimg" data-original="images/feedback/feedback-10.jpg"-->
-  <!--                        style="background-image: url('images/feedback/feedback-10.jpg');"></div>-->
-  <!--                    </div>-->
-  <!--                  </div>-->
-  <!--                </div>-->
-  <!--              </div>-->
-  <!--            </div>-->
-  <!--          </div>-->
-  <!--          <div class="t-slds__arrow_container t-slds__arrow_container-outside">-->
-  <!--            <style type="text/css">-->
-  <!--              #rec171074901 .t-slds__arrow_wrapper:hover .t-slds__arrow-withbg {-->
-  <!--                background-color: rgba(221, 221, 221, 1) !important;-->
-  <!--              }-->
-  <!--            </style>-->
-  <!--            <div class="t-slds__arrow_wrapper t-slds__arrow_wrapper-left" data-slide-direction="left">-->
-  <!--              <div class="t-slds__arrow t-slds__arrow-left t-slds__arrow-withbg"-->
-  <!--                style="width: 60px; height: 60px;background-color: rgba(221,221,221,0.50);">-->
-  <!--                <div class="t-slds__arrow_body t-slds__arrow_body-left" style="width: 19px;">-->
-  <!--                  <svg style="display: block" viewbox="0 0 20.5 33" xmlns="http://www.w3.org/2000/svg"-->
-  <!--                    xmlns:xlink="http://www.w3.org/1999/xlink">-->
-  <!--                    <desc>Left</desc>-->
-  <!--                    <polyline fill="none" stroke="#027fd5" stroke-linejoin="butt" stroke-linecap="butt"-->
-  <!--                      stroke-width="5" points="2.5,2.5 16.5,16.5 2.5,30.5"></polyline>-->
-  <!--                  </svg>-->
-  <!--                </div>-->
-  <!--              </div>-->
-  <!--            </div>-->
-  <!--            <div class="t-slds__arrow_wrapper t-slds__arrow_wrapper-right" data-slide-direction="right">-->
-  <!--              <div class="t-slds__arrow t-slds__arrow-right t-slds__arrow-withbg"-->
-  <!--                style="width: 60px; height: 60px;background-color: rgba(221,221,221,0.50);">-->
-  <!--                <div class="t-slds__arrow_body t-slds__arrow_body-right" style="width: 19px;">-->
-  <!--                  <svg style="display: block" viewbox="0 0 20.5 33" xmlns="http://www.w3.org/2000/svg"-->
-  <!--                    xmlns:xlink="http://www.w3.org/1999/xlink">-->
-  <!--                    <desc>Right</desc>-->
-  <!--                    <polyline fill="none" stroke="#027fd5" stroke-linejoin="butt" stroke-linecap="butt"-->
-  <!--                      stroke-width="5" points="2.5,2.5 16.5,16.5 2.5,30.5"></polyline>-->
-  <!--                  </svg>-->
-  <!--                </div>-->
-  <!--              </div>-->
-  <!--            </div>-->
-  <!--          </div>-->
-  <!--          <div class="t-slds__bullet_wrapper">-->
-  <!--            <div class="t-slds__bullet t-slds__bullet_active" data-slide-bullet-for="1">-->
-  <!--              <div class="t-slds__bullet_body" style="width: 12px; height: 12px;background-color: #cccccc;"></div>-->
-  <!--            </div>-->
-  <!--            <div class="t-slds__bullet " data-slide-bullet-for="2">-->
-  <!--              <div class="t-slds__bullet_body" style="width: 12px; height: 12px;background-color: #cccccc;"></div>-->
-  <!--            </div>-->
-  <!--            <div class="t-slds__bullet " data-slide-bullet-for="3">-->
-  <!--              <div class="t-slds__bullet_body" style="width: 12px; height: 12px;background-color: #cccccc;"></div>-->
-  <!--            </div>-->
-  <!--            <div class="t-slds__bullet " data-slide-bullet-for="4">-->
-  <!--              <div class="t-slds__bullet_body" style="width: 12px; height: 12px;background-color: #cccccc;"></div>-->
-  <!--            </div>-->
-  <!--            <div class="t-slds__bullet " data-slide-bullet-for="5">-->
-  <!--              <div class="t-slds__bullet_body" style="width: 12px; height: 12px;background-color: #cccccc;"></div>-->
-  <!--            </div>-->
-  <!--            <div class="t-slds__bullet " data-slide-bullet-for="6">-->
-  <!--              <div class="t-slds__bullet_body" style="width: 12px; height: 12px;background-color: #cccccc;"></div>-->
-  <!--            </div>-->
-  <!--            <div class="t-slds__bullet " data-slide-bullet-for="7">-->
-  <!--              <div class="t-slds__bullet_body" style="width: 12px; height: 12px;background-color: #cccccc;"></div>-->
-  <!--            </div>-->
-  <!--            <div class="t-slds__bullet " data-slide-bullet-for="8">-->
-  <!--              <div class="t-slds__bullet_body" style="width: 12px; height: 12px;background-color: #cccccc;"></div>-->
-  <!--            </div>-->
-  <!--            <div class="t-slds__bullet " data-slide-bullet-for="9">-->
-  <!--              <div class="t-slds__bullet_body" style="width: 12px; height: 12px;background-color: #cccccc;"></div>-->
-  <!--            </div>-->
-  <!--            <div class="t-slds__bullet " data-slide-bullet-for="10">-->
-  <!--              <div class="t-slds__bullet_body" style="width: 12px; height: 12px;background-color: #cccccc;"></div>-->
-  <!--            </div>-->
-  <!--          </div>-->
-  <!--          <div class="t-slds__caption__container"> </div>-->
-  <!--        </div>-->
-  <!--      </div>-->
-  <!--    </div>-->
-  <!--    <script type="text/javascript">-->
-  <!--      $(document).ready(function () {-->
-  <!--        t670_init('171074901');-->
-  <!--        t_sldsInit('171074901');-->
-  <!--      });-->
-  <!--      $('.t670').bind('displayChanged', function () {-->
-  <!--        t_slds_updateSlider('171074901');-->
-  <!--        t_slds_positionArrows('171074901');-->
-  <!--      });-->
-  <!--    </script>-->
-  <!--    <style type="text/css">-->
-  <!--      #rec171074901 .t-slds__bullet_active .t-slds__bullet_body {-->
-  <!--        background-color: #027fd5 !important;-->
-  <!--      }-->
-
-  <!--      #rec171074901 .t-slds__bullet:hover .t-slds__bullet_body {-->
-  <!--        background-color: #027fd5 !important;-->
-  <!--      }-->
-  <!--    </style>-->
-  <!--  </div>-->
-  <!--</div>-->
+          <div class="rights">Все права защищены ООО «Независимый центр СРО» ©</div>
+        </form>
+        <div class="footer-row">
+          <span>Контакты</span>
+          <div class="footer-item">
+            
+            <p class="footer-item-title">
+              Телефон: 
+            </p>
+            <a href="tel:+74992816962" class="footer-phone">7 (499) 281-69-62</a><br>
+          </div>
+          
+        
+          <div class="footer-item">
+         
+            <p class="footer-item-title">
+              Email: 
+            </p>
+            <a href="mailto:licensing@ass-sro.ru" class="footer-phone">licensing@ass-sro.ru</a>
+          </div>
+          <div class="footer-item" style="background: none !important; ">
+            <a href="https://t.me/+89116235367">
+              <img src="images/icons8-telegram.svg" style="width: 50px; height: 50px;" alt="" class="footer-item-icon">
+            </a>
+            <a href="https://wa.me/+79116235367">
+              
+              <img src="images/icons8-whatsapp.svg" style="width: 50px; height: 50px;" alt="" class="footer-item-icon">
+              </a>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+  </section>
 
   <style>
     :root {
@@ -639,14 +481,7 @@
       }
     }
   </style>
-  <section class="footer"
-    style="padding-top: 60px;padding-bottom: 90px;-webkit-box-shadow: 0px -4px 8px 0px rgba(50, 50, 50, 0.5);-moz-box-shadow:    0px -4px 8px 0px rgba(50, 50, 50, 0.5);box-shadow:         0px -4px 8px 0px rgba(50, 50, 50, 0.5);">
-    <div class="container">
-
-    </div>
-
-  </section>
-
+ 
   <div class="modal fade" id="tariffModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -877,6 +712,11 @@
 
   <script src="jquery.maskedinput.min.js"></script>
   <script src="script.js"></script>
+  <script src="wow.js"></script>
+
+  <script>
+    new WOW().init();
+    </script>
   <script type="text/javascript">
     (function (d, w) {
       var n = d.getElementsByTagName("script")[0],
