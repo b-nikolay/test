@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Poppins:wght@100;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;900&display=swap');
 @media print {
   body, html {
     min-width: 1200px;
@@ -14,7 +16,7 @@
 	background-color: none;
 }
 body {
-  font-family: 'Open Sans', sans-serif !important;
+     font-family: 'Golos Text', sans-serif !important;
 }
 @supports (-ms-ime-align:auto) {
 }
@@ -66,7 +68,7 @@ body {
   margin-bottom: 10px;
 }
 .want-checkbox h3 {
-  color: #414141;
+  color: #000;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 50px;
@@ -86,14 +88,14 @@ body {
   display: inline;
   font-weight: 700;
   font-size: 18px;
-  color: #414141;
+  color: #000;
 }
 
 .items-block {
   display: flex;
 }
 .items-col  .item{ 
-  
+  position: relative;
   padding: 0 !important;
   margin: 0 !important;
   margin-bottom: 20px !important;
@@ -102,11 +104,13 @@ body {
 }
 
 .number {
-  min-width: 64px;
-  min-height: 30px;
+  min-width: 35px;
+  min-height: 6px;
   background-color: #027fd5;
   position: relative;
   margin-top: 4px;
+  position: absolute;
+  top: -11px;
 }
 
 .number p {
@@ -243,7 +247,7 @@ body {
   display: flex;
   border-radius: 50%;
   margin-right: 10px;
-  border: 3px solid #9fd4ff;
+  border: 3px solid #f8c5b4;
 }
 ul, li {
   text-decoration: none;
@@ -259,7 +263,7 @@ ul, li {
   border: none;
 }
 .service h3 {
-  color: #414141;
+  color: #000;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 50px;
@@ -293,5 +297,16 @@ ul, li {
   margin-bottom: 0;
   font-weight: 700;
 }
-.service__item {
+.service-item {
+  position: relative;
+}
+.service-item:not(:last-child)::before  {
+  content: '';
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: -40px;
+  z-index: 999;
+  background-image: url('../images/arrow01.png');
+  display: block;
 }

@@ -786,11 +786,11 @@ button:active {
 
 .large-sign-wrapper .large-sign {
 	color: #fff;
-	font-size: 40px;
+	font-size: 34px;
 	text-align: left;
 	display: flex;
 	justify-content: space-between;
-	max-width: 1127px;
+	max-width: 1300px;
 	align-items: center;
 }
 
