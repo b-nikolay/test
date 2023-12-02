@@ -171,8 +171,8 @@ body {
 }
 .large-img {
   position: relative;
-  width: 25%;
   display: block;
+  height: 400px;
 }
 .large-img img::after {
   content: 'Данный документ является образцом*';
@@ -293,7 +293,6 @@ ul, li {
   gap: 16px;
   width: 240px;
   height: 100px;
-  background: #f7f7f7;
 }
 .service-col {
   display: flex;

@@ -786,11 +786,12 @@ button:active {
 
 .large-sign-wrapper .large-sign {
 	color: #fff;
-	font-size: 34px;
+	font-size: 46px;
 	text-align: left;
 	display: flex;
 	justify-content: space-between;
-	max-width: 1300px;
+	max-width: 1400px;
+	width: 100%;
 	align-items: center;
 }
 
@@ -1249,7 +1250,30 @@ a {
 	display: -ms-inline-flexbox;
 	display: inline-flex
 }
+.service {
+	position: relative;
+	padding: 50px 0;
+}
 
+.service-block{
+  position: relative;
+  margin: 30px auto;
+	padding: 40px 10px;
+  border-radius: 15px;
+  background-color: #fcfcfc;
+}
+
+.service-block::before {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%; z-index: -1;
+  transform: translate(-50%, -46%);
+  height: 100%; width: 100%;
+  padding: 20px;
+  border-radius: 30px;
+  background-image: linear-gradient(to right bottom, #f3f3f3, #bebebe);
+  filter: blur(7px);
+}
 .self-selector {
 	max-width: 600px
 }
@@ -1607,9 +1631,7 @@ a {
 	color: #fff;
 	padding: 50px 0 30px;
 	position: relative;
-	background-color: #6DB3F2;
-
-	background-image: url('images/requir-bg.jpg');
+	background: -webkit-gradient(linear, right top, left top, from(rgba(91, 89, 226, 0.616)), to(#027fd5));
 	background-repeat: no-repeat;
 	background-size: 100%;
 
