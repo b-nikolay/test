@@ -218,11 +218,11 @@ input:active:focus {
     color: #fff;
 }
 .start-section {
-	background: url(images/1.jpg);
+	/* background: url(images/1.jpg);
 	background-repeat: repeat;
 	background-size: auto;
 background-size: cover;
-background-repeat: no-repeat;
+background-repeat: no-repeat; */
 height: 100%;
 position: relative;
 padding-bottom: 50px;
@@ -3111,8 +3111,8 @@ form .modal-policy {
 	-webkit-overflow-scrolling: touch;
 	padding: 20px 25px;
 	padding-bottom: 95px;
-	min-height: 100vh;
-	max-height: 100vh;
+	min-height: auto;
+	max-height: auto;
 	overflow: hidden
 }
 
@@ -3626,9 +3626,10 @@ form .modal-policy {
 		        transform: translate(-50%, -50%)!important
 	}
 	.modal-dialog {
-		min-height: 100vh
+		height: 100%;
 	}
-	.quiz-box {
+	
+	/* .quiz-box {
 		width: 100vw;
 		max-height: 75vh;
 		min-height: 570px!important;
@@ -3639,12 +3640,12 @@ form .modal-policy {
 		-webkit-transform: translate(-50%, -50%)!important;
 		    -ms-transform: translate(-50%, -50%)!important;
 		        transform: translate(-50%, -50%)!important
-	}
-	.quiz-content {
+	} */
+	/* .quiz-content {
 		max-height: 90vh;
 		min-height: 0!important;
 		height: auto!important
-	}
+	} */
 }
 
 @media (max-width: 1025px) {

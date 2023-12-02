@@ -249,3 +249,49 @@ ul, li {
   text-decoration: none;
   list-style: none;
 }
+
+.service {
+  margin-top: 50px;
+}
+.quiz-box {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+}
+.service h3 {
+  color: #414141;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.service-row {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 70px;
+}
+.container {
+}
+.service-item {
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 240px;
+  height: 100px;
+  background: #f7f7f7;
+}
+.service-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-col  p {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+.service__item {
+}
