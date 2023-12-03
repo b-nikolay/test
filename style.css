@@ -790,7 +790,7 @@ button:active {
 	text-align: left;
 	display: flex;
 	justify-content: space-between;
-	max-width: 1400px;
+	max-width: 1200px;
 	width: 100%;
 	align-items: center;
 }
@@ -798,7 +798,38 @@ button:active {
 .large-sign-wrapper .large-sign p {
 	line-height: 1.3
 }
+.large-form {
+	position: relative;
+}
+.header-imgs {
+	position: absolute;
+  top: 140px;
+  transform: rotate(57deg);
+  right: -109px;
+}
+.header-img {
+	width: 100px;
+	
+}
+.header-img1 {
+	transform: rotate(-33deg);
+  position: absolute;
+  left: -34px;
+  z-index: 2;
+  top: 22px;
+}
+.header-img2 {
+	transform: rotate(-7deg);
+  position: absolute;
+  left: 35px;
+  top: -2px;
 
+}
+.header-img3 {
+	transform: rotate(13deg);
+  position: absolute;
+  right: -215px;
+}
 .large-sign-wrapper .large-sign h4 {
 	margin-bottom: 30px;
 	font-size: 28px
@@ -911,6 +942,7 @@ button:active {
 
 .top-navigation {
 	position: relative;
+	border-bottom: 2px solid white;
 	z-index: 4;
 	text-align: center
 }
@@ -1106,7 +1138,7 @@ button:active {
 }
 
 .bg-light {
-	background-color: inherit!important
+	background-color: inherit!important;
 }
 
 a {
