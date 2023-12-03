@@ -803,8 +803,7 @@ button:active {
 }
 .header-imgs {
 	position: absolute;
-  top: 140px;
-  transform: rotate(57deg);
+  top: 74px;
   right: -109px;
 }
 .header-img {
@@ -812,23 +811,25 @@ button:active {
 	
 }
 .header-img1 {
-	transform: rotate(-33deg);
   position: absolute;
-  left: -34px;
-  z-index: 2;
-  top: 22px;
+  left: -11px;
+  z-index: 3;
+  width: 200px;
 }
 .header-img2 {
-	transform: rotate(-7deg);
-  position: absolute;
-  left: 35px;
-  top: -2px;
+	position: absolute;
+  left: 41px;
+  top: -30px;
+  z-index: 2;
+  width: 185px;
 
 }
 .header-img3 {
-	transform: rotate(13deg);
-  position: absolute;
-  right: -215px;
+	position: absolute;
+  right: -291px;
+  top: -56px;
+  z-index: 1;
+  width: 185px;
 }
 .large-sign-wrapper .large-sign h4 {
 	margin-bottom: 30px;
